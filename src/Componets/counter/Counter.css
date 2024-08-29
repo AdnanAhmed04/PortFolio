@@ -1,0 +1,48 @@
+.counter {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 20rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+
+
+
+
+  
+}
+.number {
+  font-family: 'Arial', sans-serif; /* Replace with the closest matching font */
+  font-weight: 900 !important; /* Adjusted to match the boldness */
+  color: transparent; /* Text color is transparent */
+  -webkit-text-stroke: 1px red; /* Adds an outline with the color from the image */
+  position: relative;
+}
+
+.number::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0077A5;
+  z-index: -1;
+}
+
+
+.count {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+
+.counter_mian {
+  /* height: 20vh; */
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #0077A5 */
+  overflow: hidden;
+}

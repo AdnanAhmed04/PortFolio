@@ -1,0 +1,60 @@
+.creative_main{
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 10px;
+}
+.creative_main p{
+    
+    text-align: center; 
+    width: 300px;
+}
+ .react_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 3px;
+ }
+ .Concept_react_icon{
+    width: 80px;
+    height: 80px;
+    fill: red;
+    border-radius: 10px;
+    padding: 3px;
+ }
+ .react_icon_bulb{
+    width: 80px;
+    height: 80px;
+    fill: yellow;
+    border-radius: 10px;
+    padding: 3px;
+ }
+ .react_icon_final{
+    width: 80px;
+    height: 80px;
+    fill: green;
+    border-radius: 10px;
+    padding: 3px;
+ }
+
+
+ @media screen and (max-width: 430px) {
+    .creative_main{
+        width: 250px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        margin: 2px;
+        padding: 10px;
+        font-size: .9rem;
+    }
+    .creative_main p{
+    
+        width: 280px;
+    }
+}

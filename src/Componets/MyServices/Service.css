@@ -1,0 +1,87 @@
+
+.react_icon_bug{
+    width: 80px;
+    height: 60px;
+    fill: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 3px;
+}
+.react_icon_mobile{
+    width: 80px;
+    height: 60px;
+    fill: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 3px;
+}
+.react_icon_optimiz{
+    width: 80px;
+    height: 60px;
+    fill: rgb(6, 240, 123);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.service_main{
+  background-color: #3a3939;
+  color: rgb(202, 202, 202);
+
+}
+.services-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: nowrap; 
+    gap: 10rem; 
+  }
+  
+  .service-item {
+    text-align: center;
+    max-width: 300px;
+    flex: 1; 
+  }
+  
+  .service-icon {
+    background-color: rgb(242, 46, 46); 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+  }
+  
+  .service-icon img {
+    max-width: 50px; 
+  }
+  
+  .service-icon h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: rgb(242, 46, 46);
+  }
+  
+  .service-icon p {
+    color: rgb(202, 202, 202);
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(242, 46, 46);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .learn-more:hover {
+cursor: pointer;
+  }
+  .italic{
+    font-weight:100;
+  }
+  
