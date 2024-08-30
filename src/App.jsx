@@ -345,9 +345,9 @@ return (
    {/* ------------------------ services --------------- */}
    <section id='services'>
 
-    {/* <div className='services'>
+    <div className='services'>
       <Services services={servicesData} />
-    </div> */}
+    </div>
 
     </section>
     <WhatsAppIcon />
