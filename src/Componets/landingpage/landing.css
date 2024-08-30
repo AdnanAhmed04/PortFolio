@@ -1,5 +1,4 @@
 .landing_main{
-    /* background-color: rgb(241, 241, 241); */
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 4rem;
@@ -15,7 +14,6 @@
 }
 
 .intro_div{
-    /* background-color: brown; */
     width: fit-content;
     margin-bottom: 1rem;
 

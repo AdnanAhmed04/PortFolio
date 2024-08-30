@@ -411,16 +411,16 @@ li{
   }
 
   .transparent-menu .MuiMenu-paper {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(148, 147, 147, 0.7) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(105, 105, 105, 0.2);
     padding: 10px;
 }
 
 .my_element {
-    color: #3b82f6;
+    color: black;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background: transparent;
@@ -428,8 +428,8 @@ li{
 }
 
 .my_element:hover {
-    background-color: rgba(59, 130, 246, 0.2);
-    color: #fff;
+    background-color: rgba(3, 99, 255, 0.2);
+    color: #be1616;
     transform: translateY(-2px);
 }
 
@@ -473,7 +473,4 @@ li{
 
 
 
-  .left_side{
-	
-	/* background-color: red; */
-  }
+ 

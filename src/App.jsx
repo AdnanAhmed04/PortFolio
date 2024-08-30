@@ -259,91 +259,106 @@ const handleShowMore = () => {
 const handleShowLess = () => {
   setVisibleProjects(3);
 };
-  return (
-    <>
-    <ResponsiveAppBar/>
-    <Landingpage/>
-    <hr/>
+return (
+  <>
+    <ResponsiveAppBar />
+       {/* ------------------------ landing --------------- */}
 
-    <center>
-    <h2 className='h2_Creative'>Creative Process</h2>
-    </center>
-    <div className='creative_row'>
+    <section id='landing'>
+      <Landingpage />
+    </section>
+    <hr />
+       {/* ------------------------ creative --------------- */}
 
-    {creativeData.map((item, index) => (
-        <Creative
-          key={index}
-          heading={item.heading}
-          para={item.para}
-          img={item.img}        />
-      ))}
-          </div>
-          <hr/>
-          <div className="counters_row">
-      <Counter className='para_width' label="Projects Completed" targetNumber={50} duration={3000} suffix="+" />
-      <Counter label="Ongoing Projects" targetNumber={2} duration={9000} />
-      <Counter label="Satisfied Clients" targetNumber={95} duration={2500} suffix="%" />
-    </div>
-    <hr/>
-    
-    
-    
-    
-    <div className='skill_row'>
-      <Skills skills={skillArray} />
-    </div>
-    <div className='project_row'>
-
-      <center className='h2_Creative'>    
-      <h2>Project Showcase</h2>
+    <section id='Creative'>
+      <center>
+        <h2 className='h2_Creative'>Creative Process</h2>
       </center>
-      {/* <div className='project-list'>
-
-        {projects.map((project, index) => (
-          <Project
-          key={index}
-          imglink={project.img}
-          title={project.title}
-          price={project.price}
-          city={project.city}
+      <div className='creative_row'>
+        {creativeData.map((item, index) => (
+          <Creative
+            key={index}
+            heading={item.heading}
+            para={item.para}
+            img={item.img}
           />
         ))}
-      </div> */}
-
-<div className='project-list'>
-      {projects.slice(0, visibleProjects).map((project, index) => (
-        <Project
-          key={index}
-          imglink={project.img}
-          title={project.title}
-        />
-      ))}
-      <div className="buttons-container">
-        {visibleProjects < projects.length && (
-          <button className='show-more-button' onClick={handleShowMore}>
-            Show More
-          </button>
-        )}
-        {visibleProjects > 3 && (
-          <button className='show-less-button' onClick={handleShowLess}>
-            Show Less
-          </button>
-        )}
       </div>
-    </div>
-      <Experience_laptop/>
-      {/* <div className='services'>
+    </section>
+    <hr />
+       {/* ------------------------ Counter --------------- */}
+
+    <section id='Counter'>
+      <div className="counters_row">
+        <Counter className='para_width' label="Projects Completed" targetNumber={50} duration={3000} suffix="+" />
+        <Counter label="Ongoing Projects" targetNumber={2} duration={9000} />
+        <Counter label="Satisfied Clients" targetNumber={95} duration={2500} suffix="%" />
+      </div>
+    </section>
+    <hr />
+       {/* ------------------------ Skills --------------- */}
+
+    <section id='skill'>
+      <div className='skill_row'>
+        <Skills skills={skillArray} />
+      </div>
+    </section>
+
+
+
+   {/* ------------------------ project --------------- */}
+    <section id='Projects'>
+      <div className='project_row'>
+        <center className='h2_Creative'>
+          <h2>Project Showcase</h2>
+        </center>
+        <div className='project-list'>
+          {projects.slice(0, visibleProjects).map((project, index) => (
+            <Project
+              key={index}
+              imglink={project.img}
+              title={project.title}
+            />
+          ))}
+          <div className="buttons-container">
+            {visibleProjects < projects.length && (
+              <button className='show-more-button' onClick={handleShowMore}>
+                Show More
+              </button>
+            )}
+            {visibleProjects > 3 && (
+              <button className='show-less-button' onClick={handleShowLess}>
+                Show Less
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+       {/* ------------------------ experience --------------- */}
+
+       <section id='Experience'>
+
+    <Experience_laptop />
+
+</section>
+   {/* ------------------------ services --------------- */}
+   <section id='services'>
+
+    {/* <div className='services'>
       <Services services={servicesData} />
     </div> */}
+
+    </section>
     <WhatsAppIcon />
+       {/* ------------------------ contact --------------- */}
 
-    {/* <ContactForm/> */}
-    </div>
+       <section id='contact'>
 
-    </>
-  )
+    {/* <ContactForm /> */}
+    </section>
+  </>
+);
 }
 
 export default App;
-
-

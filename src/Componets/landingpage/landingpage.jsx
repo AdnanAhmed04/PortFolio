@@ -91,9 +91,13 @@ const Landingpage = () => {
           highest standards.</u>
         </p>
         <div className="btn_div">
-        <button className="landing_btn">Hire Me</button>
-        <button className="landing_btn">See My Work</button>
-        </div>
+        <a href="../../../public/Adnan_cv.pdf" target="_blank" >
+
+        <button  className="landing_btn" >Hire Me</button></a>
+        <button className="landing_btn" onClick={() => document.getElementById('Projects').scrollIntoView({ behavior: 'smooth' })}
+>
+  See My Work
+</button>        </div>
         
       </div>
 

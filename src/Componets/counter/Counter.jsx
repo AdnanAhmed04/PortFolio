@@ -13,7 +13,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '' }) => {
           setHasStarted(true);
         }
       },
-      { threshold: 0.1 } // Adjust the threshold as needed
+      { threshold: 0.1 } 
     );
 
     if (counterRef.current) {
@@ -31,7 +31,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '' }) => {
     if (!hasStarted) return;
 
     let start = 0;
-    const stepTime = 50; // Time between each step in milliseconds
+    const stepTime = 50; 
     const steps = duration / stepTime;
     const increment = Math.ceil(targetNumber / steps);
 

@@ -14,10 +14,10 @@
   
 }
 .number {
-  font-family: 'Arial', sans-serif; /* Replace with the closest matching font */
-  font-weight: 900 !important; /* Adjusted to match the boldness */
-  color: transparent; /* Text color is transparent */
-  -webkit-text-stroke: 1px red; /* Adds an outline with the color from the image */
+  font-family: 'Arial', sans-serif; 
+  font-weight: 900 !important; 
+  color: transparent; 
+  -webkit-text-stroke: 1px red; 
   position: relative;
 }
 
@@ -38,11 +38,9 @@
 
 
 .counter_mian {
-  /* height: 20vh; */
   display: flex;
   width: fit-content;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: #0077A5 */
   overflow: hidden;
 }

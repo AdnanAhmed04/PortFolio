@@ -2,23 +2,21 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import { Link as ScrollLink } from "react-scroll";
+import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Container from "@mui/material/Container"; // Add this import
+import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
 
 const pages = [
-  { name: "About me", nav_id: "about" },
+  { name: "About me", nav_id: "landing" },
   { name: "Projects", nav_id: "Projects" },
-  { name: "My Skills", nav_id: "skills" },
-  { name: "Let's Connect", nav_id: "connect" },
+  { name: "My Skills", nav_id: "skill" },
+  { name: "Let's Connect", nav_id: "contact" },
 ];
 
 function ResponsiveAppBar({ dm, s_dm }) {
@@ -34,7 +32,7 @@ function ResponsiveAppBar({ dm, s_dm }) {
   const handleCloseNavMenu = (page) => {
     setAnchorElNav(null);
     if (page) {
-      const targetId = page.replace(/\s+/g, "");
+      const targetId = page.replace(/\s+/g, "").toLowerCase();
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: "smooth" });
@@ -52,10 +50,10 @@ function ResponsiveAppBar({ dm, s_dm }) {
   return (
     <AppBar
       className={`transition-colors duration-500 sticky top-0 ${
-        darkMode ? "bg-gray-800" : "bg-[#e7e5e4]"
+        darkMode ? "bg-red-800" : "bg-[#e7e5e4]"
       }`}
       position="sticky"
-      sx={{ background: "transparent", color: darkMode ? "#fff" : "black" }}
+      sx={{ background: "lightgray", opacity: 0.95, color: darkMode ? "#fff" : "black" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -108,7 +106,7 @@ function ResponsiveAppBar({ dm, s_dm }) {
                             darkMode ? "text-white" : "text-black"
                           }`}
                         >
-                          {page?.name}
+                          {page.name}
                         </div>
                       </ScrollLink>
                     </li>
@@ -146,7 +144,7 @@ function ResponsiveAppBar({ dm, s_dm }) {
             }}
           >
             <span className="text-[0.8rem] text-center m-auto">
-              &lt; <strong>Mern Stack dev</strong> /&gt;
+              &lt; <strong>Front End dev</strong> /&gt;
             </span>
           </Typography>
           <Box sx={{ display: { xs: "block", md: "none" } }}>
@@ -192,15 +190,15 @@ function ResponsiveAppBar({ dm, s_dm }) {
                   >
                     <ScrollLink
                       activeClass="active"
-                      to={page?.nav_id}
+                      to={page.nav_id}
                       spy={true}
                       smooth={true}
                       offset={-70}
                       duration={500}
-                      onClick={() => handleCloseNavMenu(page?.name)}
+                      onClick={() => handleCloseNavMenu(page.name)}
                       className="w-[100%] flex items-center justify-center gap-2"
                     >
-                      {page?.name}
+                      {page.name}
                     </ScrollLink>
                   </MenuItem>
                 ))}
