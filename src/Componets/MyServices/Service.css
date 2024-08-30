@@ -24,23 +24,23 @@
 .service_main{
   background-color: #3a3939;
   color: rgb(202, 202, 202);
+  width: 100%;
 
 }
 .services-container {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 20px;
+    padding: 10px;
     flex-direction: row;
     margin: auto;
-    flex-wrap: nowrap; 
-    gap: 10rem; 
+    gap: 5rem; 
   }
   
   .service-item {
     text-align: center;
-    max-width: 300px;
-    flex: 1; 
+    width: 90%;
+    height: 100%;
   }
   
   .service-icon {
@@ -68,6 +68,7 @@
     color: rgb(202, 202, 202);
     font-size: 0.9em;
     line-height: 1.5;
+
   }
   
   .learn-more {
@@ -85,3 +86,11 @@ cursor: pointer;
     font-weight:100;
   }
   
+
+  @media screen and (max-width: 450px) {
+    .services-container {
+   
+      flex-wrap: wrap;
+      
+    }
+  }
