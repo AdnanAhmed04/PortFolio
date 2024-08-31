@@ -1,79 +1,57 @@
-import React, { useState } from 'react';
-import './ContactForm.css'; // Import the CSS file
+import React from 'react';
+import './ContactForm.css'; 
 
-const ContactForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus] = useState('');
+function ContactForm() {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "12ccb587-67c5-49cd-8c4a-2a5cb6c9d562");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('message', message);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    try {
-      const response = await fetch('https://formspree.io/f/xzzpynjy', { // Replace with your Formspree endpoint
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
 
-      if (response.ok) {
-        setStatus('Message sent successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        setStatus('Failed to send message. Please try again later.');
-      }
-    } catch (error) {
-      setStatus('Failed to send message. Please try again later.');
+    if (res.success) {
+      console.log("Success", res);
+      event.target.reset(); 
+    } else {
+      console.log("Error", res);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        ></textarea>
-      </div>
-      <button type="submit">Send</button>
-      {status && <p className={status.includes('Failed') ? 'error' : ''}>{status}</p>}
+    <form className='form' onSubmit={onSubmit}>
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        style={{ display: 'block', marginBottom: '10px' }} 
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        style={{ display: 'block', marginBottom: '10px' }} 
+      />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+        style={{ display: 'block', marginBottom: '10px', width: '100%' }}
+      ></textarea>
+      <button type="submit">Submit Form</button>
     </form>
   );
-};
+}
 
 export default ContactForm;
