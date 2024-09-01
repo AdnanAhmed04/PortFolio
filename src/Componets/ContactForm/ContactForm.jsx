@@ -29,6 +29,7 @@ function ContactForm() {
 
   return (
     <form className='form' onSubmit={onSubmit}>
+      <h2 className='form-heading'>Let's Talk</h2>
       <input
         type="text"
         name="name"
