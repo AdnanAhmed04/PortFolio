@@ -51,7 +51,7 @@ import Skills from './Componets/my_skills/Skills';
 import Project from './Componets/my_projects/project';
 import Experience_laptop from './Componets/experience/laptop_exp'
 import WhatsAppIcon from './Componets/WhatsAppIcon/WhatsAppIcon'
-// import ContactForm from './Componets/ContactForm/ContactForm'
+import ContactForm from './Componets/ContactForm/ContactForm'
 
 
 // importing images
@@ -353,9 +353,9 @@ return (
     <WhatsAppIcon />
        {/* ------------------------ contact --------------- */}
 
-       <section id='contact'>
+     <section id='contact'>
 
-    {/* <ContactForm /> */}
+    <ContactForm />
     </section>
   </>
 );
