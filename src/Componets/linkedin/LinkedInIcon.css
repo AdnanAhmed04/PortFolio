@@ -1,0 +1,32 @@
+.linkedin-icon-wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: #0077b5;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px #0077b5); /* Glowing effect */
+    transition: filter 0.3s ease; /* Transition for glow effect */
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .linkedin-icon {
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  /* Keyframes for the glowing effect */
+  @keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 5px #0077b5);
+    }
+    100% {
+      filter: drop-shadow(0 0 15px #0077b5);
+    }
+  }
+  
