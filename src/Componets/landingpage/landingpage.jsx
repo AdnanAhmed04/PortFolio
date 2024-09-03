@@ -82,13 +82,13 @@ const Landingpage = () => {
         </div>
 
         <p className="landing_para">
-          Hello! I'm Adnan Ahmed, <u className="imp">a Web Developer with 4 months of
-          experience</u>, currently focused on enhancing my skills <u className="imp">(undergraduate)</u>. My expertise spans
-          <u className="imp"> JavaScript, ReactJS, Next.js, TailwindCSS, Bootstrap, SQL, and more </u>,
+          Hello! I'm Adnan Ahmed, <span className="imp">a Web Developer with 4 months of
+          experience</span>, currently focused on enhancing my skills <span className="imp">(undergraduate)</span>. My expertise spans
+          <span className="imp"> JavaScript, ReactJS, Next.js, TailwindCSS, Bootstrap, SQL, and more </span>,
           enabling me to create responsive and efficient web applications. With a
-          passion for coding and a commitment to excellence, <u className="imp">I'm dedicated to
+          passion for coding and a commitment to excellence, <span className="imp">I'm dedicated to
           turning your ideas into reality and ensuring that everything meets the
-          highest standards.</u>
+          highest standards.</span>
         </p>
         <div className="btn_div">
         <a href="../../../public/Adnan_cv.pdf" target="_blank" >
