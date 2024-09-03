@@ -9,7 +9,8 @@
     gap: 4rem;
 }
 .imp{
-    text-decoration: underline;
+    color:red;
+    
     text-decoration-color: red;
 }
 
