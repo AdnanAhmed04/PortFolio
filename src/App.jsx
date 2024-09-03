@@ -360,7 +360,9 @@ return (
 
     <ContactForm />
     </section>
-<p>This page is under development. Stay tuned for updates!</p>
+    <center>
+    <p>This page is under development. Stay tuned for updates!</p>
+</center>
 
 
   </>
