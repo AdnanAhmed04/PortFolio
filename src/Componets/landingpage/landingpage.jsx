@@ -84,7 +84,7 @@ const Landingpage = () => {
         <p className="landing_para">
           Hello! I'm Adnan Ahmed, <u className="imp">a Web Developer with 4 months of
           experience</u>, currently focused on enhancing my skills <u className="imp">(undergraduate)</u>. My expertise spans
-          <u className="imp">JavaScript, ReactJS, Next.js, TailwindCSS, Bootstrap, SQL, and more </u>,
+          <u className="imp"> JavaScript, ReactJS, Next.js, TailwindCSS, Bootstrap, SQL, and more </u>,
           enabling me to create responsive and efficient web applications. With a
           passion for coding and a commitment to excellence, <u className="imp">I'm dedicated to
           turning your ideas into reality and ensuring that everything meets the
