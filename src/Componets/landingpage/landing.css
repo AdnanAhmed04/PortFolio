@@ -8,11 +8,10 @@
     justify-content: center;
     gap: 4rem;
 }
-.imp{
-    color:red;
-    
-    text-decoration-color: red;
+.imp {
+    color: red;
 }
+
 
 .intro_div{
     width: fit-content;
