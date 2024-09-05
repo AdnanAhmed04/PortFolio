@@ -31,7 +31,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '' }) => {
     if (!hasStarted) return;
 
     let start = 0;
-    const stepTime = 50; 
+    const stepTime = 10; 
     const steps = duration / stepTime;
     const increment = Math.ceil(targetNumber / steps);
 
