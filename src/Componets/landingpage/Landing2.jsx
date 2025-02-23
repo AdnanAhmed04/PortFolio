@@ -42,7 +42,7 @@ const Landing2 = () => {
 
     // Function to open the CV file
     const handleDownloadCV = () => {
-        window.open("/src/Componets/landingpage/Adnan Ahmed CV.pdf", "_blank");
+        window.open("/public/Adnan Ahmed CV.pdf", "_blank");
     };
 
     return (
@@ -102,7 +102,7 @@ const Landing2 = () => {
 
                 {/* Right Side - Image */}
                 <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-                <img src="/src/Componets/landingpage/banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
+                <img src="/public/banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
                 </div>
 
             </div>
