@@ -40,9 +40,9 @@ const Landing2 = () => {
         return () => clearTimeout(typingTimeout);
     }, [text, index, isDeleting, loop]);
 
-    // Function to open the CV file
+
     const handleDownloadCV = () => {
-        window.open("/public/Adnan Ahmed CV.pdf", "_blank");
+        window.open("Adnan Ahmed CV.pdf", "_blank");
     };
 
     return (
@@ -66,7 +66,7 @@ const Landing2 = () => {
                         highest standards.
                     </p>
 
-                    {/* Social Media Icons */}
+
                     <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
                         <a href="https://www.linkedin.com/in/adnan-ahmed-066847242/" target="_blank" rel="noopener noreferrer"
                             className="text-gray-400 bg-gray-100 p-2 rounded-full hover:text-blue-500 transition text-2xl">
@@ -94,13 +94,13 @@ const Landing2 = () => {
                         </a>
                     </div>
 
-                    {/* Hire Me Button */}
+
                     <button onClick={handleDownloadCV} className="bg-yellow-400 text-black px-4 py-2 rounded-lg mt-6 font-semibold hover:bg-yellow-500 transition">
                         Hire Me
                     </button>
                 </div>
 
-                {/* Right Side - Image */}
+
                 <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
                 <img src="banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
                 </div>
