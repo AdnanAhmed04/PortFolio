@@ -47,9 +47,9 @@ const Landing2 = () => {
 
     return (
         <div className="bg-[#0a0e2a] text-white min-h-screen flex items-center justify-center ">
-            <div className=" max-w-5xl flex flex-col md:flex-row items-center gap-12 w-full px-2">
+            <div className=" max-w-5xl flex flex-col md:flex-row items-center gap-12 w-full ">
 
-                <div className="md:w-3/4 text-center md:text-left ">
+                <div className="md:w-3/4 text-center md:text-left mt-8 sm:mt-0 ">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-300">
                         Hi, I'm Adnan Ahmed
                     </h2>
@@ -61,7 +61,7 @@ const Landing2 = () => {
                     </h2>
 
 
-                    <p className="mt-4 text-gray-400 px-6">
+                    <p className="mt-4 text-gray-400 w-[95%]  text-center mx-auto sm:text-left sm:mx-0">
                         Hello! I'm Adnan Ahmed, a Full Stack Developer with 4 months of experience, currently focused on
                         enhancing my skills (undergraduate). My expertise spans <u>JavaScript, React JS, Next Js,
                             MongoDB, Express JS, TailwindCSS, Bootstrap, SQL,</u> and more, enabling me to create responsive
@@ -69,6 +69,7 @@ const Landing2 = () => {
                         I'm dedicated to turning your ideas into reality and ensuring that everything meets the
                         highest standards.
                     </p>
+
 
 
                     <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
