@@ -102,7 +102,7 @@ const Landing2 = () => {
 
                 {/* Right Side - Image */}
                 <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-                <img src="/public/banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
+                <img src="banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
                 </div>
 
             </div>
