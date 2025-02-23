@@ -48,10 +48,10 @@ const Counter = ({ label, targetNumber, duration, suffix = '' }) => {
   }, [hasStarted, targetNumber, duration]);
 
   return (
-    <div className='counter_mian' ref={counterRef}>
+    <div className='counter_mian h-48 md:h-56 flex justify-center items-center text-white' ref={counterRef}>
       <div className="counter ">
         <span className="count number">{count}{suffix}</span>
-        <p>{label}</p>
+        <p className='text-white'>{label}</p>
       </div>
     </div>
   );

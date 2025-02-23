@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experience = () => {
   return (
-    <div className="timeline">
+    <div className="timeline ">
       <p className="timeline-header">WHAT I HAVE DONE SO FAR</p>
       <h1 className="timeline-title">Work Experience.</h1>
       

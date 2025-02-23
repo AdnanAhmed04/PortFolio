@@ -17,7 +17,7 @@
   font-family: 'Arial', sans-serif; 
   font-weight: 900 !important; 
   color: transparent; 
-  -webkit-text-stroke: 1px red; 
+  -webkit-text-stroke: 1px rgba(253, 253, 253, 0.807); 
   position: relative;
 }
 

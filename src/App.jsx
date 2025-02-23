@@ -81,7 +81,7 @@ function App() {
     {
       heading: '01 Inspiration',
       para: 'The starting point where creative ideas and concepts are sparked by experiences, observations, or influences.',
-      img: <TbBulb className="react_icon_bulb" /> 
+      img: <TbBulb className="react_icon_bulb" />
 
     },
     {
@@ -99,7 +99,7 @@ function App() {
     {
       heading: '04 Development',
       para: 'Transforming initial concepts into structured designs, prototypes, or detailed plans for execution.',
-      img: <FcServices  className="react_icon" />
+      img: <FcServices className="react_icon" />
 
     },
     {
@@ -107,277 +107,278 @@ function App() {
       para: 'Bringing the creative vision to life through the application of skills, tools, and techniques to produce the final product.',
       img: <FcProcess className="react_icon" />
 
-    }, 
+    },
     {
       heading: '06 finalization',
       para: 'Iterating and polishing the work based on feedback, ensuring it meets the highest standards of quality and effectiveness.',
       img: <PiCertificate className="react_icon_final" />
     }
-    
+
   ];
   const servicesData = [
     {
-        heading: 'Mobile Optimize',
-        para: 'Ensure that websites and applications are fully responsive and function seamlessly on all mobile devices, enhancing user experience and accessibility.',
-        img: <TbDeviceMobileCog className="react_icon_mobile" />
+      heading: 'Mobile Optimize',
+      para: 'Ensure that websites and applications are fully responsive and function seamlessly on all mobile devices, enhancing user experience and accessibility.',
+      img: <TbDeviceMobileCog className="react_icon_mobile" />
     },
     {
-        heading: 'Maintenance and Bug Fixes',
-        para: 'Provide ongoing support to identify and resolve issues, ensuring the website remains functional, secure, and up-to-date.',
-        img: <FaBugSlash className="react_icon_bug" />
+      heading: 'Maintenance and Bug Fixes',
+      para: 'Provide ongoing support to identify and resolve issues, ensuring the website remains functional, secure, and up-to-date.',
+      img: <FaBugSlash className="react_icon_bug" />
     },
     {
-        heading: 'Optimiz Animation',
-        para: 'Improve the efficiency and performance of animations, ensuring smooth transitions and interactions without compromising load times.',
-        img: <BsGraphUpArrow className="react_icon_optimiz" />
+      heading: 'Optimiz Animation',
+      para: 'Improve the efficiency and performance of animations, ensuring smooth transitions and interactions without compromising load times.',
+      img: <BsGraphUpArrow className="react_icon_optimiz" />
     }
-];
+  ];
 
-const skillArray = [
-  {
-    img: <FaHtml5 className="react_icon_skill_html react_icon_skill" />
-    ,  
-    skill: 'HTML',
-  },
-  {
-    img: <FaCss3Alt className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'CSS',
-  },
-  {
-    img: <FaNodeJs className="react_icon_skill_python react_icon_skill" />
-    ,  
-    skill: 'JavaScript',
-  },
-  {
-    img: <FaReact className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'React',
-  },
-  {
-    img: <RiNextjsFill className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'Next',
-  },
+  const skillArray = [
+    {
+      img: <FaHtml5 className="react_icon_skill_html react_icon_skill" />
+      ,
+      skill: 'HTML',
+    },
+    {
+      img: <FaCss3Alt className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'CSS',
+    },
+    {
+      img: <FaNodeJs className="react_icon_skill_python react_icon_skill" />
+      ,
+      skill: 'JavaScript',
+    },
+    {
+      img: <FaReact className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'React',
+    },
+    {
+      img: <RiNextjsFill className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'Next',
+    },
 
-  {
-    img: <SiExpress className=" react_icon_skill" />
-    ,  
-    skill: 'Express',
-  },
-  {
-    img: <SiMongodb  className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'MongoDB',
-  },
-  {
-    img: <RiTailwindCssFill className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'Tailwind CSS',
-  },
-  {
-    img: <SiMui className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'Material Ui',
-  },
-  {
-    img: <FaBootstrap className="react_icon_skill_bootstrap react_icon_skill" />
-    ,  
-    skill: 'Bootstrap',
-  },
-  {
-    img: <IoLogoFirebase className="react_icon_skill_firebase react_icon_skill" />
-    ,  
-    skill: 'Firebase',
-  },
-  {
-    img: <SiAmazons3 className="react_icon_skill_git react_icon_skill" />
-    ,  
-    skill: 'Amazon S3',
-  },
-  {
-    img: <GrMysql className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'SQL',
-  },
-  {
-    img: <FaPython className="react_icon_skill_python react_icon_skill" />
-    ,  
-    skill: 'Python',
-  },
-  {
-    img: <SiPostman className="react_icon_skill_html react_icon_skill" />
-    ,  
-    skill: 'Postman',
-  },
-  {
-    img: <SiJirasoftware className="react_icon_skill_css react_icon_skill" />
-    ,  
-    skill: 'Jira',
-  },
-  {
-    img: <FaGithub className="react_icon_skill_git react_icon_skill" />
-    ,  
-    skill: 'Github',
-  },
-  {
-    img: <FaGitAlt className="react_icon_skill_html react_icon_skill" />
-    ,  
-    skill: 'Git',
-  },
-  
-];
+    {
+      img: <SiExpress className=" react_icon_skill" />
+      ,
+      skill: 'Express',
+    },
+    {
+      img: <SiMongodb className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'MongoDB',
+    },
+    {
+      img: <RiTailwindCssFill className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'Tailwind CSS',
+    },
+    {
+      img: <SiMui className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'Material Ui',
+    },
+    {
+      img: <FaBootstrap className="react_icon_skill_bootstrap react_icon_skill" />
+      ,
+      skill: 'Bootstrap',
+    },
+    {
+      img: <IoLogoFirebase className="react_icon_skill_firebase react_icon_skill" />
+      ,
+      skill: 'Firebase',
+    },
+    {
+      img: <SiAmazons3 className="react_icon_skill_git react_icon_skill" />
+      ,
+      skill: 'Amazon S3',
+    },
+    {
+      img: <GrMysql className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'SQL',
+    },
+    {
+      img: <FaPython className="react_icon_skill_python react_icon_skill" />
+      ,
+      skill: 'Python',
+    },
+    {
+      img: <SiPostman className="react_icon_skill_html react_icon_skill" />
+      ,
+      skill: 'Postman',
+    },
+    {
+      img: <SiJirasoftware className="react_icon_skill_css react_icon_skill" />
+      ,
+      skill: 'Jira',
+    },
+    {
+      img: <FaGithub className="react_icon_skill_git react_icon_skill" />
+      ,
+      skill: 'Github',
+    },
+    {
+      img: <FaGitAlt className="react_icon_skill_html react_icon_skill" />
+      ,
+      skill: 'Git',
+    },
 
-
-const [visibleProjects, setVisibleProjects] = useState(3);
-const projects = [
-  {
-    img: zakat,
-    title: 'Zakat calculator using Js and CSS',
-  },{
-    img: to_do,
-    title: 'To Do List using React and CSS',
-  },
-  {
-    img: olx,
-    title: 'Olx Clone using React and CSS',
-  },
-  {
-    img: pak,
-    title: 'PakWheels Clone using React and TailwindCSS',
-  },
-  {
-    img: form,
-    title: 'Google Form  using CSS and Firebase',
-  },
-  {
-    img: wea,
-    title: 'Weather App using Js and TailwindCSS',
-  },
-
-  {
-    img: linkedin,
-    title: 'linkedin Clone using React and TailwindCSS',
-  },
-  {
-    img: shop,
-    title: 'Shoping Cart using React and TailwindCSS',
-  },
-  {
-    img: netflix,
-    title: 'HTML CSS and JS',
-  },
-];
-const handleShowMore = () => {
-  setVisibleProjects((prev) => prev + 3);
-};
-
-const handleShowLess = () => {
-  setVisibleProjects(3);
-};
-return (
-  <>
-    <ResponsiveAppBar />
-       {/* ------------------------ landing --------------- */}
-
-    <section id='landing'>
-      {/* <Landingpage /> */}
-      <Landing2 />
-
-    </section>
-       {/* ------------------------ creative --------------- */}
-
-    <section id='Creative' className='bg-[#0a0e2a]'>
-      <center>
-        <h2 className='h2_Creative text-white'>Creative Process</h2>
-      </center>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
-      {creativeData.map((item, index) => (
-        <Creative key={index} heading={item.heading} para={item.para} img={item.img} />
-      ))}
-    </div>
-    </section>
-    <hr />
-       {/* ------------------------ Counter --------------- */}
-
-    <section id='Counter'>
-      <div className="counters_row">
-        <Counter className='para_width' label="Projects Completed" targetNumber={50} duration={3000} suffix="+" />
-        <Counter label="Ongoing Projects" targetNumber={2} duration={9000} />
-        <Counter label="Satisfied Clients" targetNumber={95} duration={2500} suffix="%" />
-      </div>
-    </section>
-    <hr />
-       {/* ------------------------ Skills --------------- */}
-
-    <section id='skill'>
-      <div className='skill_row'>
-        <Skills skills={skillArray} />
-      </div>
-    </section>
+  ];
 
 
+  const [visibleProjects, setVisibleProjects] = useState(3);
+  const projects = [
+    {
+      img: zakat,
+      title: 'Zakat calculator using Javascript and CSS',
+    }, {
+      img: to_do,
+      title: 'To Do List using React Vite and CSS',
+    },
+    {
+      img: olx,
+      title: 'Olx Clone using React Vite and CSS',
+    },
+    {
+      img: pak,
+      title: 'PakWheels Clone using React and TailwindCSS',
+    },
+    {
+      img: form,
+      title: 'Google Form  using CSS and Firebase',
+    },
+    {
+      img: wea,
+      title: 'Weather App using Js and TailwindCSS',
+    },
 
-   {/* ------------------------ project --------------- */}
-    <section id='Projects'>
-      <div className='project_row'>
-        <center className='h2_Creative'>
-          <h2>Project Showcase</h2>
+    {
+      img: linkedin,
+      title: 'linkedin Clone using React and TailwindCSS',
+    },
+    {
+      img: shop,
+      title: 'Shoping Cart using React and TailwindCSS',
+    },
+    {
+      img: netflix,
+      title: 'HTML CSS and JS',
+    },
+  ];
+  const handleShowMore = () => {
+    setVisibleProjects((prev) => prev + 3);
+  };
+
+  const handleShowLess = () => {
+    setVisibleProjects(3);
+  };
+  return (
+    <div className='bg-[#0a0e2a]'>
+      <ResponsiveAppBar />
+      {/* ------------------------ landing --------------- */}
+
+      <section id='landing'>
+        {/* <Landingpage /> */}
+        <Landing2 />
+
+      </section>
+      {/* ------------------------ creative --------------- */}
+
+      <section id='Creative' className='bg-[#0a0e2a]'>
+        <center>
+          <h2 className='h2_Creative text-white'>Creative Process</h2>
         </center>
-        <div className='project-list'>
-          {projects.slice(0, visibleProjects).map((project, index) => (
-            <Project
-              key={index}
-              imglink={project.img}
-              title={project.title}
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+          {creativeData.map((item, index) => (
+            <Creative key={index} heading={item.heading} para={item.para} img={item.img} />
           ))}
-          <div className="buttons-container">
+        </div>
+      </section>
+      {/* ------------------------ Counter --------------- */}
+
+      <section id='Counter'>
+        <div className="counters_row  bg-[#0a0e2a]">
+          <Counter className='para_width ' label="Projects Completed" targetNumber={50} duration={3000} suffix="+" />
+          <Counter label="Ongoing Projects " targetNumber={2} duration={9000} />
+          <Counter label="Satisfied Clients " targetNumber={95} duration={2500} suffix="%" />
+        </div>
+      </section>
+      {/* ------------------------ Skills --------------- */}
+
+      <section id='skill'>
+        <div className='skill_row'>
+          <Skills skills={skillArray} />
+        </div>
+      </section>
+
+
+
+      {/* ------------------------ project --------------- */}
+      <section id="Projects">
+        <div className="bg-[#0a0e2a] pt-12 pb-12 px-4">
+          <center className="h2_Creative">
+            <h2 className="text-white text-2xl md:text-3xl">Project Showcase</h2>
+          </center>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-12 mt-8">
+            {projects.slice(0, visibleProjects).map((project, index) => (
+              <Project key={index} imglink={project.img} title={project.title} />
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
             {visibleProjects < projects.length && (
-              <button className='show-more-button' onClick={handleShowMore}>
+              <button
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
+                onClick={handleShowMore}
+              >
                 Show More
               </button>
             )}
             {visibleProjects > 3 && (
-              <button className='show-less-button' onClick={handleShowLess}>
+              <button
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
+                onClick={handleShowLess}
+              >
                 Show Less
               </button>
             )}
           </div>
         </div>
-      </div>
-    </section>
-       {/* ------------------------ experience --------------- */}
+      </section>
 
-       <section id='Experience'>
+      {/* ------------------------ experience --------------- */}
 
-    <Experience_laptop />
+      <section className='bg-[#0a0e2a]' id='Experience'>
 
-</section>
-   {/* ------------------------ services --------------- */}
-{/*    <section id='services'>
+        <Experience_laptop />
 
-    <div className='services'>
-      <Services services={servicesData} />
+      </section>
+      {/* ------------------------ services --------------- */}
+      {/*    <section id='services'>
+
+        <div className='services'>
+          <Services services={servicesData} />
+        </div>
+
+        </section> */}
+      {/* ---------------------------whatsapp and linkedin icons ---------------------------- */}
+      <WhatsAppIcon />
+      <LinkedInIcon />
+      {/* ------------------------ contact --------------- */}
+
+      <section className='bg-[#0a0e2a]' id='contact'>
+
+        <ContactForm />
+      </section>
+      <center>
+        <p>This page is under development. Stay tuned for updates!</p>
+      </center>
+
+
     </div>
-
-    </section> */}
-    {/* ---------------------------whatsapp and linkedin icons ---------------------------- */}
-    <WhatsAppIcon />
-    <LinkedInIcon />
-    {/* ------------------------ contact --------------- */}
-
-       <section id='contact'>
-
-    <ContactForm />
-    </section>
-    <center>
-    <p>This page is under development. Stay tuned for updates!</p>
-</center>
-
-
-  </>
-);
+  );
 }
 
 export default App;

@@ -43,7 +43,7 @@
 .form button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #EE4E4E;
+  background-color: #0073ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -53,12 +53,11 @@
 }
 
 .form button[type="submit"]:hover {
-  background-color: #fe2424;
+  background-color: #0084ff;
 }
 
 .form button[type="submit"]:focus {
   outline: none;
-  box-shadow: 0 0 5px #EE4E4E;
 }
 
 @media (max-width: 600px) {
