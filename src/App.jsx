@@ -56,6 +56,7 @@ import Experience_laptop from './Componets/experience/laptop_exp'
 import WhatsAppIcon from './Componets/WhatsAppIcon/WhatsAppIcon'
 import LinkedInIcon from './Componets/linkedin/LinkedInIconWrapper'
 import ContactForm from './Componets/ContactForm/ContactForm'
+import Landing2 from './Componets/landingpage/Landing2';
 
 
 // importing images
@@ -280,7 +281,9 @@ return (
        {/* ------------------------ landing --------------- */}
 
     <section id='landing'>
-      <Landingpage />
+      {/* <Landingpage /> */}
+      <Landing2 />
+
     </section>
     <hr />
        {/* ------------------------ creative --------------- */}
