@@ -1,22 +1,15 @@
-import React from 'react'
-import './Creative.css'
+import React from 'react';
 
-const Creative = (props) => {
+const Creative = ({ heading, para, img }) => {
   return (
-    <div className='creative_main'>
-        <div>
-        {typeof props.img === 'string' ? (
-    <img className='Creative_img' src={props.img} alt={props.heading} />
-  ) : (
-    <div className='Creative_img'>{props.img}</div>
-  )}
-        </div>
- 
-  <h2>{props.heading}</h2>
-  <p>{props.para}</p>
-</div>
+    <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center flex flex-col items-center transition-transform duration-300 hover:scale-105">
+      <div className="text-5xl text-blue-500 flex items-center justify-center mb-4">
+        {img}
+      </div>
+      <h2 className="text-xl font-semibold text-gray-800">{heading}</h2>
+      <p className="text-gray-600 mt-2">{para}</p>
+    </div>
+  );
+};
 
-  )
-}
-
-export default Creative
+export default Creative;

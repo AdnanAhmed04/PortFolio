@@ -285,23 +285,17 @@ return (
       <Landing2 />
 
     </section>
-    <hr />
        {/* ------------------------ creative --------------- */}
 
-    <section id='Creative'>
+    <section id='Creative' className='bg-[#0a0e2a]'>
       <center>
-        <h2 className='h2_Creative'>Creative Process</h2>
+        <h2 className='h2_Creative text-white'>Creative Process</h2>
       </center>
-      <div className='creative_row'>
-        {creativeData.map((item, index) => (
-          <Creative
-            key={index}
-            heading={item.heading}
-            para={item.para}
-            img={item.img}
-          />
-        ))}
-      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 max-w-6xl mx-auto">
+      {creativeData.map((item, index) => (
+        <Creative key={index} heading={item.heading} para={item.para} img={item.img} />
+      ))}
+    </div>
     </section>
     <hr />
        {/* ------------------------ Counter --------------- */}
