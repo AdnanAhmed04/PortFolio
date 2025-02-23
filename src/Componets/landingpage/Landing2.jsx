@@ -46,21 +46,25 @@ const Landing2 = () => {
     };
 
     return (
-        <div className="bg-[#0a0e2a] text-white min-h-screen flex items-center justify-center px-6">
-            <div className="max-w-5xl flex flex-col md:flex-row items-center gap-12 w-full">
+        <div className="bg-[#0a0e2a] text-white min-h-screen flex items-center justify-center ">
+            <div className=" max-w-5xl flex flex-col md:flex-row items-center gap-12 w-full px-2">
 
-                {/* Left Side - Text & Social Icons */}
-                <div className="md:w-3/4 text-center md:text-left">
-                    <h2 className="text-4xl font-semibold text-gray-300">Hi, I'm Adnan Ahmed</h2>
-                    <h1 className="text-4xl font-bold text-yellow-400 mt-2">I'm enthusiastic about creating</h1>
-                    <h2 className="text-3xl font-bold text-yellow-400 mt-2">
+                <div className="md:w-3/4 text-center md:text-left ">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-300">
+                        Hi, I'm Adnan Ahmed
+                    </h2>
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 mt-2">
+                        I'm enthusiastic about creating
+                    </h1>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400 mt-2">
                         <span className="wrap">{text}</span><span className="cursor">|</span>
                     </h2>
 
-                    <p className="mt-4 text-gray-400">
+
+                    <p className="mt-4 text-gray-400 px-6">
                         Hello! I'm Adnan Ahmed, a Full Stack Developer with 4 months of experience, currently focused on
                         enhancing my skills (undergraduate). My expertise spans <u>JavaScript, React JS, Next Js,
-                        MongoDB, Express JS, TailwindCSS, Bootstrap, SQL,</u> and more, enabling me to create responsive
+                            MongoDB, Express JS, TailwindCSS, Bootstrap, SQL,</u> and more, enabling me to create responsive
                         and efficient web applications. With a passion for coding and a commitment to excellence,
                         I'm dedicated to turning your ideas into reality and ensuring that everything meets the
                         highest standards.
@@ -102,7 +106,7 @@ const Landing2 = () => {
 
 
                 <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-                <img src="banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
+                    <img src="banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
                 </div>
 
             </div>
