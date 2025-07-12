@@ -260,7 +260,7 @@ function App() {
       title: 'Google Form  using CSS and Firebase',
     },  {
       img: to_do,
-      title: 'To Do List using React Vite and CSS',
+      title: 'To Do List App using React-vite and CSS',
     },
     
     {
