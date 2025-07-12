@@ -11,7 +11,7 @@ const Project = ({ imglink, title }) => {
         />
       </div>
       <div className="flex justify-center items-center mb-3">
-        <p className="text-lg font-semibold">{title}</p>
+        <p className="text-md">{title}</p>
       </div>
       <a
         className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md transition-colors block text-center"

@@ -63,6 +63,13 @@ import Landing2 from './Componets/landingpage/Landing2';
 import form from '../src/Componets/my_projects/form.png';
 import wea from '../src/Componets/my_projects/weather.png';
 import zakat from '../src/Componets/my_projects/zakat.png';
+import expense from '../src/Componets/my_projects/expense.png';
+import finchart from '../src/Componets/my_projects/finchart.png';
+import movie from '../src/Componets/my_projects/movie.png';
+import chat from '../src/Componets/my_projects/chat.png';
+
+// finchart
+
 import pak from '../src/Componets/my_projects/pakwheels.png';
 import to_do from '../src/Componets/my_projects/to_do.png';
 import olx from '../src/Componets/my_projects/olx.png';
@@ -232,11 +239,33 @@ function App() {
   const [visibleProjects, setVisibleProjects] = useState(3);
   const projects = [
     {
+      img: expense,
+      title: 'Expense App using React-vite Tailwindcss Express and MongoDB',
+    }, {
+      img: chat,
+      title: 'Chat App using React-vite tailwindcss Express and MongoDB',
+    }
+    , {
+      img: movie,
+      title: 'Movie Finder using React-vite Tailwindcss and Rest API',
+    },{
+      img: finchart,
+      title: 'Finchart Pro using Python Tkinter CSV Matplotlib Pandas',
+    }, {
       img: zakat,
       title: 'Zakat calculator using Javascript and CSS',
-    }, {
+    },
+    {
+      img: form,
+      title: 'Google Form  using CSS and Firebase',
+    },  {
       img: to_do,
       title: 'To Do List using React Vite and CSS',
+    },
+    
+    {
+      img: shop,
+      title: 'Shoping Cart using React and TailwindCSS',
     },
     {
       img: olx,
@@ -247,10 +276,6 @@ function App() {
       title: 'PakWheels Clone using React and TailwindCSS',
     },
     {
-      img: form,
-      title: 'Google Form  using CSS and Firebase',
-    },
-    {
       img: wea,
       title: 'Weather App using Js and TailwindCSS',
     },
@@ -258,10 +283,6 @@ function App() {
     {
       img: linkedin,
       title: 'linkedin Clone using React and TailwindCSS',
-    },
-    {
-      img: shop,
-      title: 'Shoping Cart using React and TailwindCSS',
     },
     {
       img: netflix,
@@ -318,35 +339,41 @@ function App() {
 
       {/* ------------------------ project --------------- */}
       <section id="Projects">
-        <div className="bg-[#0a0e2a] pt-12 pb-12 px-4">
-          <center className="h2_Creative">
-            <h2 className="text-white text-2xl md:text-3xl">Project Showcase</h2>
-          </center>
-          <div className="flex flex-wrap justify-center gap-6 md:gap-12 mt-8">
-            {projects.slice(0, visibleProjects).map((project, index) => (
-              <Project key={index} imglink={project.img} title={project.title} />
-            ))}
-          </div>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
-            {visibleProjects < projects.length && (
-              <button
-                className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
-                onClick={handleShowMore}
-              >
-                Show More
-              </button>
-            )}
-            {visibleProjects > 3 && (
-              <button
-                className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
-                onClick={handleShowLess}
-              >
-                Show Less
-              </button>
-            )}
-          </div>
-        </div>
-      </section>
+  <div className="bg-[#0a0e2a] pt-12 pb-12 px-4">
+    {/* Heading */}
+    <center className="h2_Creative">
+      <h2 className="text-white text-2xl md:text-3xl">Project Showcase</h2>
+    </center>
+
+    {/* Centered Grid */}
+    <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 mt-8">
+      {projects.slice(0, visibleProjects).map((project, index) => (
+        <Project key={index} imglink={project.img} title={project.title} />
+      ))}
+    </div>
+
+    {/* Buttons */}
+    <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
+      {visibleProjects < projects.length && (
+        <button
+          className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
+          onClick={handleShowMore}
+        >
+          Show More
+        </button>
+      )}
+      {visibleProjects > 3 && (
+        <button
+          className="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white transition-all"
+          onClick={handleShowLess}
+        >
+          Show Less
+        </button>
+      )}
+    </div>
+  </div>
+</section>
+
 
       {/* ------------------------ experience --------------- */}
 

@@ -29,13 +29,12 @@ function ResponsiveAppBar() {
     const savedMode = JSON.parse(localStorage.getItem("darkmode"));
 
     if (savedMode === null) {
-      // Default to dark mode if no preference is saved
       setDarkMode(true);
       localStorage.setItem("darkmode", JSON.stringify(true));
-      document.body.style.backgroundColor = "#0a0e2a";
+      document.body.style.backgroundColor = "#0a0e2a"; // Dark Blue
     } else {
       setDarkMode(savedMode);
-      document.body.style.backgroundColor = savedMode ? "#0a0e2a" : "lightgray";
+      document.body.style.backgroundColor = savedMode ? "#0a0e2a" : "#ffffff";
     }
   }, []);
 
@@ -60,19 +59,17 @@ function ResponsiveAppBar() {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     localStorage.setItem("darkmode", JSON.stringify(newDarkMode));
-
-    // Apply background color when toggling
-    document.body.style.backgroundColor = newDarkMode ? "#0a0e2a" : "lightgray";
+    document.body.style.backgroundColor = newDarkMode ? "#0a0e2a" : "#ffffff";
   };
 
   return (
     <AppBar
       className={`transition-colors duration-500 sticky top-0 ${
-        darkMode ? "bg-[#0a0e2a]" : "bg-[#e7e5e4]"
+        darkMode ? "bg-[#0a0e2a]" : "bg-[#ffffff]"
       }`}
       position="sticky"
       sx={{
-        background: darkMode ? "#0a0e2a" : "lightgray",
+        background: darkMode ? "#0a0e2a" : "#ffffff",
         opacity: 0.95,
         color: darkMode ? "#fff" : "black",
       }}
@@ -190,7 +187,10 @@ function ResponsiveAppBar() {
               </IconButton>
               <div className="bg-transparent border mt-3 w-[80vw]">
                 {pages.map((page, index) => (
-                  <MenuItem key={index} className={`${isMenuOpen ? "my_element" : ""}`}>
+                  <MenuItem
+                    key={index}
+                    className={`${isMenuOpen ? "my_element" : ""}`}
+                  >
                     <ScrollLink
                       activeClass="active"
                       to={page.nav_id}
