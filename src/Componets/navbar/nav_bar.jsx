@@ -21,10 +21,11 @@ const pages = [
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [darkMode, setDarkMode] = React.useState(true); // Default to Dark Mode
+  // const [darkMode, setDarkMode] = React.useState(true); // Default to Dark Mode
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  // Load dark mode state from localStorage and apply background color
+  // 🔹 Commented dark mode persistence logic
+  /*
   React.useEffect(() => {
     const savedMode = JSON.parse(localStorage.getItem("darkmode"));
 
@@ -37,6 +38,7 @@ function ResponsiveAppBar() {
       document.body.style.backgroundColor = savedMode ? "#0a0e2a" : "#ffffff";
     }
   }, []);
+  */
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -55,23 +57,23 @@ function ResponsiveAppBar() {
     setIsMenuOpen(false);
   };
 
+  // 🔹 Commented toggleDarkMode
+  /*
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     localStorage.setItem("darkmode", JSON.stringify(newDarkMode));
     document.body.style.backgroundColor = newDarkMode ? "#0a0e2a" : "#ffffff";
   };
+  */
 
   return (
     <AppBar
-      className={`transition-colors duration-500 sticky top-0 ${
-        darkMode ? "bg-[#0a0e2a]" : "bg-[#ffffff]"
-      }`}
       position="sticky"
       sx={{
-        background: darkMode ? "#0a0e2a" : "#ffffff",
+        background: "#0a0e2a", // fixed dark blue background
         opacity: 0.95,
-        color: darkMode ? "#fff" : "black",
+        color: "#fff",
       }}
     >
       <Container maxWidth="xl">
@@ -86,7 +88,7 @@ function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".0rem",
-              color: darkMode ? "#fff" : "inherit",
+              color: "#fff",
               textDecoration: "none",
             }}
           >
@@ -107,10 +109,7 @@ function ResponsiveAppBar() {
           >
             <div className="header">
               <nav className="navbar">
-                <ul
-                  className="navbar__menu"
-                  style={{ color: darkMode ? "#fff" : "inherit" }}
-                >
+                <ul className="navbar__menu" style={{ color: "#fff" }}>
                   {pages.map((page, index) => (
                     <li key={index} className="navbar__item">
                       <ScrollLink
@@ -121,11 +120,7 @@ function ResponsiveAppBar() {
                         offset={-70}
                         duration={500}
                       >
-                        <div
-                          className={`linktag navbar__link ${
-                            darkMode ? "text-white" : "text-black"
-                          }`}
-                        >
+                        <div className="linktag navbar__link text-white">
                           {page.name}
                         </div>
                       </ScrollLink>
@@ -136,7 +131,8 @@ function ResponsiveAppBar() {
             </div>
           </Box>
 
-          {/* Dark Mode Toggle */}
+          {/* 🔹 Dark Mode Toggle (commented out) */}
+          {/*
           <div className="toggle">
             <input
               type="checkbox"
@@ -149,6 +145,7 @@ function ResponsiveAppBar() {
             </label>
             <div className="light"></div>
           </div>
+          */}
 
           <Box sx={{ display: { xs: "block", md: "none" } }}>
             <IconButton
@@ -160,7 +157,7 @@ function ResponsiveAppBar() {
               color="inherit"
               className="menu-icon"
             >
-              <MenuIcon style={{ color: darkMode ? "#fff" : "#3b82f6" }} />
+              <MenuIcon style={{ color: "#fff" }} />
             </IconButton>
 
             <Menu
