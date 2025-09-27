@@ -21,24 +21,30 @@ const pages = [
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [darkMode, setDarkMode] = React.useState(true); // Default to Dark Mode
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  // 🔹 Commented dark mode persistence logic
-  /*
+  // 🌙 Dark mode state
+  const [darkMode, setDarkMode] = React.useState(true);
+
+  // Load preference from localStorage on mount
   React.useEffect(() => {
     const savedMode = JSON.parse(localStorage.getItem("darkmode"));
-
-    if (savedMode === null) {
-      setDarkMode(true);
-      localStorage.setItem("darkmode", JSON.stringify(true));
-      document.body.style.backgroundColor = "#0a0e2a"; // Dark Blue
-    } else {
+    if (savedMode !== null) {
       setDarkMode(savedMode);
       document.body.style.backgroundColor = savedMode ? "#0a0e2a" : "#ffffff";
+    } else {
+      localStorage.setItem("darkmode", JSON.stringify(true));
+      document.body.style.backgroundColor = "#0a0e2a";
     }
   }, []);
-  */
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    localStorage.setItem("darkmode", JSON.stringify(newDarkMode));
+    document.body.style.backgroundColor = newDarkMode ? "#0a0e2a" : "#ffffff";
+  };
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -57,23 +63,14 @@ function ResponsiveAppBar() {
     setIsMenuOpen(false);
   };
 
-  // 🔹 Commented toggleDarkMode
-  /*
-  const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    localStorage.setItem("darkmode", JSON.stringify(newDarkMode));
-    document.body.style.backgroundColor = newDarkMode ? "#0a0e2a" : "#ffffff";
-  };
-  */
-
   return (
     <AppBar
       position="sticky"
       sx={{
-        background: "#0a0e2a", // fixed dark blue background
+        background: darkMode ? "#0a0e2a" : "#ffffff",
         opacity: 0.95,
-        color: "#fff",
+        color: darkMode ? "#fff" : "#000",
+        transition: "all 0.3s ease",
       }}
     >
       <Container maxWidth="xl">
@@ -88,7 +85,7 @@ function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".0rem",
-              color: "#fff",
+              color: darkMode ? "#fff" : "#000",
               textDecoration: "none",
             }}
           >
@@ -109,7 +106,10 @@ function ResponsiveAppBar() {
           >
             <div className="header">
               <nav className="navbar">
-                <ul className="navbar__menu" style={{ color: "#fff" }}>
+                <ul
+                  className="navbar__menu"
+                  style={{ color: darkMode ? "#fff" : "#000" }}
+                >
                   {pages.map((page, index) => (
                     <li key={index} className="navbar__item">
                       <ScrollLink
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
                         offset={-70}
                         duration={500}
                       >
-                        <div className="linktag navbar__link text-white">
+                        <div className="linktag navbar__link">
                           {page.name}
                         </div>
                       </ScrollLink>
@@ -131,8 +131,7 @@ function ResponsiveAppBar() {
             </div>
           </Box>
 
-          {/* 🔹 Dark Mode Toggle (commented out) */}
-          {/*
+          {/* 🌙 Dark Mode Toggle */}
           <div className="toggle">
             <input
               type="checkbox"
@@ -145,8 +144,8 @@ function ResponsiveAppBar() {
             </label>
             <div className="light"></div>
           </div>
-          */}
 
+          {/* Mobile Menu */}
           <Box sx={{ display: { xs: "block", md: "none" } }}>
             <IconButton
               size="large"
@@ -157,7 +156,7 @@ function ResponsiveAppBar() {
               color="inherit"
               className="menu-icon"
             >
-              <MenuIcon style={{ color: "#fff" }} />
+              <MenuIcon style={{ color: darkMode ? "#fff" : "#000" }} />
             </IconButton>
 
             <Menu
@@ -178,9 +177,9 @@ function ResponsiveAppBar() {
             >
               <IconButton
                 onClick={() => handleCloseNavMenu()}
-                className="absolute top-3 right-3 text-white"
+                className="absolute top-3 right-3"
               >
-                <CloseIcon />
+                <CloseIcon style={{ color: darkMode ? "#fff" : "#000" }} />
               </IconButton>
               <div className="bg-transparent border mt-3 w-[80vw]">
                 {pages.map((page, index) => (
@@ -197,6 +196,7 @@ function ResponsiveAppBar() {
                       duration={500}
                       onClick={() => handleCloseNavMenu(page.name)}
                       className="w-[100%] flex items-center justify-center gap-2"
+                      style={{ color: darkMode ? "#fff" : "#000" }}
                     >
                       {page.name}
                     </ScrollLink>
