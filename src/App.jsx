@@ -239,6 +239,10 @@ function App() {
   const [visibleProjects, setVisibleProjects] = useState(3);
   const projects = [
     {
+      img: Trip ,
+      title: 'Trip planner using Figma (prototype)',
+    },
+    {
       img: expense,
       title: 'Expense App using React-vite Tailwindcss Express and MongoDB',
     }, {
