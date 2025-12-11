@@ -241,7 +241,7 @@ function App() {
   const [visibleProjects, setVisibleProjects] = useState(3);
   const projects = [
     {
-      img: Trip ,
+      img: trip ,
       title: 'Trip planner using Figma (prototype)',
     },
     {
