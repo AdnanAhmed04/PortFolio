@@ -67,6 +67,8 @@ import expense from '../src/Componets/my_projects/expense.png';
 import finchart from '../src/Componets/my_projects/finchart.png';
 import movie from '../src/Componets/my_projects/movie.png';
 import chat from '../src/Componets/my_projects/chat.png';
+import trip from '../src/Componets/my_projects/trip.png';
+
 
 // finchart
 
