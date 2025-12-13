@@ -18,12 +18,15 @@ const Project = ({ imglink, title, index = 0 }) => {
       className="group relative w-full bg-gradient-to-br from-[#0f1642] to-[#0a0e2a] rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 shadow-lg hover:shadow-cyan-500/20"
     >
       {/* Image Container with Overlay */}
-      <div className="relative h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
+      <div className="relative w-full h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
         <img
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           src={imglink}
           alt={projectName}
-          loading="lazy"
+          onError={(e) => {
+            console.error('Image failed to load:', imglink);
+            e.target.style.display = 'none';
+          }}
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e2a] via-transparent to-transparent opacity-60" />

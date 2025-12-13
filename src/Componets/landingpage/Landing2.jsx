@@ -251,7 +251,7 @@ const Landing2 = () => {
                                 >
                                     <div className="flex items-center gap-1.5">
                                         <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                                        <span className="text-xs font-medium text-slate-300">2+ Years</span>
+                                        <span className="text-xs font-medium text-slate-300">1+ Years</span>
                                     </div>
                                 </motion.div>
 
