@@ -47,13 +47,13 @@ const Landing2 = () => {
 
     return (
         <div className="bg-[#0a0e2a] text-white min-h-screen flex items-center justify-center ">
-            <div className=" max-w-5xl flex flex-col md:flex-row items-center gap-12 w-full ">
+            <div className=" max-w-7xl flex flex-col md:flex-row items-center gap-12 w-full ">
 
-                <div className="md:w-3/4 text-center md:text-left mt-8 sm:mt-0 ">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-300">
+                <div className="md:w-4/5 text-center md:text-left mt-8 sm:mt-0 ">
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-gray-300">
                         Hi, I'm Adnan Ahmed
                     </h2>
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 mt-2">
+                    <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold text-yellow-400 mt-2">
                         I'm enthusiastic about creating
                     </h1>
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400 mt-2">
@@ -61,10 +61,10 @@ const Landing2 = () => {
                     </h2>
 
 
-                    <p className="mt-4 text-gray-400 w-[95%]  text-center mx-auto sm:text-left sm:mx-0">
+                    <p className="mt-4 text-gray-400 w-[95%] md:text-xl mx-auto  sm:mx-0">
                         Hello! I'm Adnan Ahmed, a Full Stack Developer with 4 months of experience, currently focused on
                         enhancing my skills (undergraduate). My expertise spans <u>JavaScript, React JS, Next Js,
-                            MongoDB, Express JS, TailwindCSS, Bootstrap, SQL,</u> and more, enabling me to create responsive
+                            MongoDB, Express JS, TailwindCSS, Bootstrap, AOS ,Framer Motion ,Material UI ,Figma,</u> and more, enabling me to create responsive
                         and efficient web applications. With a passion for coding and a commitment to excellence,
                         I'm dedicated to turning your ideas into reality and ensuring that everything meets the
                         highest standards.
@@ -106,7 +106,7 @@ const Landing2 = () => {
                 </div>
 
 
-                <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+                <div className="w-60 md:w-[700px] md:h-auto  flex justify-center  ">
                     <img src="banner-image.png" alt="Animation Designer" className="w-[400px] h-auto" />
                 </div>
 

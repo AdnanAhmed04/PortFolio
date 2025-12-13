@@ -132,7 +132,7 @@ function ResponsiveAppBar() {
           </Box>
 
           {/* 🌙 Dark Mode Toggle */}
-          <div className="toggle">
+          {/* <div className="toggle">
             <input
               type="checkbox"
               id="btn"
@@ -143,7 +143,7 @@ function ResponsiveAppBar() {
               <span className="thumb"></span>
             </label>
             <div className="light"></div>
-          </div>
+          </div> */}
 
           {/* Mobile Menu */}
           <Box sx={{ display: { xs: "block", md: "none" } }}>
@@ -156,7 +156,7 @@ function ResponsiveAppBar() {
               color="inherit"
               className="menu-icon"
             >
-              <MenuIcon style={{ color: darkMode ? "#fff" : "#000" }} />
+              <MenuIcon style={{ color: darkMode ? "#fff" : "#ffffff" }} />
             </IconButton>
 
             <Menu
@@ -196,7 +196,7 @@ function ResponsiveAppBar() {
                       duration={500}
                       onClick={() => handleCloseNavMenu(page.name)}
                       className="w-[100%] flex items-center justify-center gap-2"
-                      style={{ color: darkMode ? "#fff" : "#000" }}
+                      style={{ color: darkMode ? "#fff" : "#ffffff" }}
                     >
                       {page.name}
                     </ScrollLink>

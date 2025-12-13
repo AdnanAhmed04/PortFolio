@@ -68,7 +68,7 @@ import finchart from '../src/Componets/my_projects/finchart.png';
 import movie from '../src/Componets/my_projects/movie.png';
 import chat from '../src/Componets/my_projects/chat.png';
 import trip from '../src/Componets/my_projects/trip.png';
-
+import erp from '../src/Componets/my_projects/erp.png';
 
 // finchart
 
@@ -241,15 +241,20 @@ function App() {
   const [visibleProjects, setVisibleProjects] = useState(3);
   const projects = [
     {
+      img: erp ,
+      title: 'ERP SyStem using React, TailwindCSS, Postman & Rest API ',
+    },
+    {
       img: trip ,
-      title: 'Trip planner using Figma (prototype)',
+      title: 'Trip planning platform using Figma, MERN stack, & LLM',
+    },
+    {
+      img: chat,
+      title: 'Chat App using React-vite tailwindcss Express and MongoDB',
     },
     {
       img: expense,
       title: 'Expense App using React-vite Tailwindcss Express and MongoDB',
-    }, {
-      img: chat,
-      title: 'Chat App using React-vite tailwindcss Express and MongoDB',
     }
     , {
       img: movie,
@@ -308,13 +313,12 @@ function App() {
       {/* ------------------------ landing --------------- */}
 
       <section id='landing'>
-        {/* <Landingpage /> */}
         <Landing2 />
 
       </section>
       {/* ------------------------ creative --------------- */}
 
-      <section id='Creative' className='bg-[#0a0e2a]'>
+     <section id='Creative' className='bg-[#0a0e2a]'>
         <center>
           <h2 className='h2_Creative text-white'>Creative Process</h2>
         </center>
@@ -324,6 +328,7 @@ function App() {
           ))}
         </div>
       </section>
+
       {/* ------------------------ Counter --------------- */}
 
       <section id='Counter'>
@@ -352,7 +357,7 @@ function App() {
     </center>
 
     {/* Centered Grid */}
-    <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 mt-8">
+    <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-20 mt-8">
       {projects.slice(0, visibleProjects).map((project, index) => (
         <Project key={index} imglink={project.img} title={project.title} />
       ))}

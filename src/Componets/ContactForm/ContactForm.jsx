@@ -1,5 +1,4 @@
 import React from 'react';
-import './ContactForm.css'; 
 
 function ContactForm() {
   const onSubmit = async (event) => {
@@ -28,29 +27,42 @@ function ContactForm() {
   };
 
   return (
-    <form className='form ' onSubmit={onSubmit}>
-      <h2 className='form-heading '>Let's Talk</h2>
+    <form
+      className="md:w-[70%] mx-auto mt-40 p-5 rounded-xl shadow-lg text-white "
+      onSubmit={onSubmit}
+    >
+      <h2 className="mb-4 text-2xl text-center text-white font-semibold">
+let's Connect       </h2>
+
       <input
         type="text"
         name="name"
         placeholder="Your Name"
         required
-        style={{ display: 'block', marginBottom: '10px' }} 
+        className="block w-full p-2.5 mb-4 bg-transparent border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
+
       <input
         type="email"
         name="email"
         placeholder="Your Email"
         required
-        style={{ display: 'block', marginBottom: '10px' }} 
+        className="block w-full p-2.5 mb-4 bg-transparent border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
+
       <textarea
         name="message"
         placeholder="Your Message"
         required
-        style={{ display: 'block', marginBottom: '10px', width: '100%' }}
+        className="block w-full p-2.5 mb-4 h-36 bg-transparent border border-gray-300 rounded-md text-base resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
       ></textarea>
-      <button type="submit">Submit Form</button>
+
+      <button
+        type="submit"
+        className="w-full py-3 bg-blue-600 text-white text-lg rounded-md cursor-pointer transition hover:bg-blue-700"
+      >
+        Submit Form
+      </button>
     </form>
   );
 }

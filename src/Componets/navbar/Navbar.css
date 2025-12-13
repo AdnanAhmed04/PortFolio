@@ -379,7 +379,7 @@ li{
 	height: calc(var(--sz) / 1.75);
 	border-radius: var(--sz);
 	box-shadow: 
-	  0 0px calc(var(--sz) / 50) calc(var(--sz) / 50) #0008, 
+	  0 0px calc(var(--sz) / 50) calc(var(--sz) / 50) rgba(190, 127, 127, 0.533), 
 	  0 -4px calc(var(--sz) / 10) calc(var(--sz) / 500) #000, 
 	  0 2px calc(var(--sz) / 10) calc(var(--sz) / 500) #fff8, 
 	  0 0px calc(var(--sz) / 20) calc(var(--sz) / 25) #000;

@@ -2,7 +2,7 @@ import React from "react";
 
 const Project = ({ imglink, title }) => {
   return (
-    <div className="w-full sm:w-72 md:w-80 border border-gray-300 p-4 rounded-lg text-center bg-white shadow-md hover:border-gray-400 hover:shadow-lg transition-all">
+    <div className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-104 border border-gray-300 p-4 rounded-lg text-center bg-white shadow-md hover:border-gray-400 hover:shadow-lg transition-all">
       <div className="mb-3">
         <img
           className="w-full h-48 md:h-52 rounded-md object-cover"
