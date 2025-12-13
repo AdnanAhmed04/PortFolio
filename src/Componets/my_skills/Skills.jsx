@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import React from 'react';
 
-=======
 import React from "react";
 import { motion } from "framer-motion";
->>>>>>> 19d9a521c94894235f81a1758082d8d9a9e450f3
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaBootstrap, FaNodeJs, FaDatabase, FaGitAlt, FaFigma, FaJira, FaTools } from "react-icons/fa";
 import { GrCloudComputer } from "react-icons/gr";
 import { DiVisualstudio } from "react-icons/di";
@@ -37,7 +33,6 @@ const cardVariant = {
 
 const Skills = () => {
   return (
-<<<<<<< HEAD
     
 <div className='flex flex-col items-center justify-center mt-20'>
   <div className='flex justify-center'>
@@ -129,71 +124,6 @@ const Skills = () => {
     </div>
     </div>
 )
-=======
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="relative text-white py-16 px-6 md:px-12 lg:px-20 w-full"
-    >
-      <div className="relative text-center mb-12">
-        <motion.h2
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.7 }}
-          className="text-4xl font-bold tracking-wide mb-3 text-white flex items-center justify-center"
-        >
-          <span className="flex-1 border-t border-gray-400 mx-4"></span>
-          ○ My Skills ○
-          <span className="flex-1 border-t border-gray-400 mx-4"></span>
-        </motion.h2>
-      </div>
-
-      <div className="relative grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto opacity-85">
-        {skillsData.map((section, index) => (
-          <div
-            key={index}
-            custom={index}
-            variants={cardVariant}
-            initial="hidden"
-            animate="visible"
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform"
-          >
-            <div className="flex items-center mb-4">
-              <span className="text-4xl mr-3">{section.icon}</span>
-              <h3 className={`text-xl font-semibold ${section.color}`}>{section.category}</h3>
-            </div>
-
-            <ul className="text-gray-200 space-y-2">
-              {section.skills.map((skill, i) => (
-                <motion.li
-                  key={i}
-                  whileHover={{ scale: 1.05, x: 5 }}
-                  className="flex items-center space-x-3"
-                >
-                  <span className="text-3xl mt-1">{skill.icon}</span>
-                  <span>{skill.name}</span>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="relative text-center mt-12">
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          href="https://github.com/AdnanAhmed04"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow-md inline-block"
-        >
-          See My Work
-        </motion.a>
-      </div>
-    </motion.section>
-  );
->>>>>>> 19d9a521c94894235f81a1758082d8d9a9e450f3
 };
 
 export default Skills;
