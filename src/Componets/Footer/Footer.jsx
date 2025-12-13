@@ -13,6 +13,8 @@ const Footer = () => {
         { icon: FaStackOverflow, href: "https://stackoverflow.com/users/27099467/adnan-ahmed", label: "Stack Overflow" },
         { icon: SiHackerrank, href: "https://www.hackerrank.com/profile/adnanahmed140221", label: "HackerRank" },
         { icon: SiUpwork, href: "https://www.upwork.com/freelancers/~your-profile", label: "Upwork" },
+        
+
     ];
 
     const quickLinks = [

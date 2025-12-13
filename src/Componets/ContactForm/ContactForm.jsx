@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaPaperPlane, FaUser, FaEnvelope, FaComment, FaMapMarkerAlt, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaPaperPlane, FaUser, FaEnvelope, FaComment, FaMapMarkerAlt, FaPhone, FaLinkedin, FaGithub, FaMobile } from 'react-icons/fa';
 
 function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -35,9 +35,10 @@ function ContactForm() {
   };
 
   const contactInfo = [
-    { icon: FaMapMarkerAlt, label: "Location", value: "Pakistan" },
+    { icon: FaMapMarkerAlt, label: "Location", value: "Karachi Pakistan" },
     { icon: FaEnvelope, label: "Email", value: "adnanahmedb7208@gmail.com" },
-    { icon: FaPhone, label: "Phone", value: "+92 XXX XXXXXXX" },
+    { icon: FaMobile, label: "Phone", value: "+92 318 8397653" },
+    
   ];
 
   return (
