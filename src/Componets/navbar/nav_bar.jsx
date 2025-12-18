@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
               className="flex-shrink-0"
             >
               <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                &lt;Adnan /&gt;
+                &lt;Dev /&gt;
               </span>
             </motion.div>
 
