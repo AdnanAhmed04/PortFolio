@@ -222,17 +222,18 @@ const Landing2 = () => {
 
                                 {/* Image Container */}
                                 <motion.div
-                                    animate={{ y: [0, -10, 0] }}
-                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                    className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-700/50 shadow-2xl bg-gradient-to-br from-slate-800 to-slate-900"
-                                >
-                                    <img
-                                        src="banner-image.png"
-                                        alt="Adnan Ahmed - Full Stack Developer"
-                                        className="w-full h-full object-cover object-center"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e2a]/40 via-transparent to-transparent" />
-                                </motion.div>
+    animate={{ y: [0, -10, 0] }}
+    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+    className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-slate-700/50 shadow-2xl bg-gradient-to-br from-slate-800 to-slate-900"
+>
+    <img
+        src="https://raw.githubusercontent.com/hasibul-hasan-shuvo/hasibul-hasan-shuvo/main/images/coding-boy.gif"
+        alt="Adnan Ahmed - Full Stack Developer"
+        className="w-full h-full object-cover object-center"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e2a]/40 via-transparent to-transparent" />
+</motion.div>
+
 
                                 {/* Floating Badge - Developer */}
                                 <motion.div
