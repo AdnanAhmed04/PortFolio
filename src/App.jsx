@@ -71,6 +71,8 @@ import movie from '../src/Componets/my_projects/movie.png';
 import chat from '../src/Componets/my_projects/chat.png';
 import trip from '../src/Componets/my_projects/trip.png';
 import erp from '../src/Componets/my_projects/erp.png';
+import autoexpense_hub from '../src/Componets/my_projects/autoexpense_hub.png';
+
 
 // finchart
 
@@ -250,6 +252,10 @@ function App() {
     {
       img: trip,
       title: 'Trip planning platform using Figma, MERN stack, & LLM',
+    },
+    {
+      img: autoexpense_hub,
+      title: 'Auto Expense hub platform using React-vite tailwindcss Postman Express and MongoDB',
     },
     {
       img: chat,
