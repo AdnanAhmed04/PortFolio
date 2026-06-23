@@ -42,12 +42,20 @@ const Experience = ({ language = {} }) => {
       description: "Creating scalable web applications and deploying cloud-based solutions.",
     },
     {
-      comp_name: "Freelance",
-      designation: "Frontend Developer",
-      startDate: "Jul 2025 - Present",
+      comp_name: "Virtual Care",
+      designation: "Full Stack Engineer",
+      startDate: "Jun 2025 - Mar 2026 · 10 mos",
       present: false,
-      skills: ["React",  "TailwindCSS", "Material UI", "JavaScript","Redux", "AOS", "Framer Motion", "AWS S3", 'Cloudinary ', "GraphQL", "Rest API", "Figma", "SEO", "Responsive Design", "NPM/Yarn",'Postman','API Integration'],
-      description: "Developed user-friendly web pages using modern frontend technologies.",
+      skills: ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS", "Material UI", "JavaScript", "REST API", "Git"],
+      description: "Built and maintained full stack web applications, handling both frontend and backend development.",
+    },
+    {
+      comp_name: "TailorFlow AI",
+      designation: "Full Stack Engineer",
+      startDate: "Apr 2026 - Present",
+      present: true,
+      skills: ["React Native", "Supabase", "Material UI", "LLM Implementation", "JavaScript", "REST API", "Git"],
+      description: "Developing an AI-powered mobile application using Supabase and Material UI.",
     },
   ];
 

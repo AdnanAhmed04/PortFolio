@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaCode, FaFire } from "react-icons/fa";
 
-const Project = ({ imglink, title, index = 0 }) => {
+const Project = ({ imglink, title, index = 0, fit = "cover", hot = false }) => {
   // Extract tech stack from title for display
   const techMatch = title.match(/using\s+(.+)$/i);
   const projectName = title.split(' using ')[0];
@@ -18,9 +18,9 @@ const Project = ({ imglink, title, index = 0 }) => {
       className="group relative w-full bg-gradient-to-br from-[#0f1642] to-[#0a0e2a] rounded-2xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 shadow-lg hover:shadow-cyan-500/20"
     >
       {/* Image Container with Overlay */}
-      <div className="relative w-full h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
+      <div className="relative w-full h-36 sm:h-40 md:h-44 lg:h-48 overflow-hidden">
         <img
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className={`w-full h-full ${fit === "contain" ? "object-contain" : "object-cover"} transition-transform duration-700 group-hover:scale-110`}
           src={imglink}
           alt={projectName}
           onError={(e) => {
@@ -62,46 +62,44 @@ const Project = ({ imglink, title, index = 0 }) => {
             <span>Project</span>
           </div>
         </div>
+
+        {/* Hot Badge */}
+        {hot && (
+          <div className="absolute top-3 left-3">
+            <div className="px-3 py-1 rounded-full bg-orange-500/20 backdrop-blur-sm border border-orange-500/40 text-orange-400 text-xs font-bold flex items-center gap-1">
+              <FaFire className="w-3 h-3 animate-pulse" />
+              <span>HOT</span>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Content Section */}
-      <div className="p-5">
+      <div className="p-4">
         {/* Project Title */}
-        <h3 className="text-lg font-semibold text-white mb-3 line-clamp-2 group-hover:text-cyan-400 transition-colors duration-300">
+        <h3 className="text-base font-semibold text-white mb-2 line-clamp-2 group-hover:text-cyan-400 transition-colors duration-300">
           {projectName}
         </h3>
 
         {/* Tech Stack Tags */}
         {techStack.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-1.5 mb-3">
             {techStack.slice(0, 4).map((tech, i) => (
               <span
                 key={i}
-                className="px-2 py-1 text-xs rounded-md bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
+                className="px-2 py-0.5 text-[11px] rounded-md bg-slate-800/80 text-slate-300 border border-slate-700/50 hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
               >
                 {tech}
               </span>
             ))}
             {techStack.length > 4 && (
-              <span className="px-2 py-1 text-xs rounded-md bg-slate-800/80 text-slate-400">
+              <span className="px-2 py-0.5 text-[11px] rounded-md bg-slate-800/80 text-slate-400">
                 +{techStack.length - 4} more
               </span>
             )}
           </div>
         )}
 
-        {/* Action Button */}
-        <motion.a
-          href="https://github.com/AdnanAhmed04"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium text-sm hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40"
-        >
-          <FaGithub className="w-4 h-4" />
-          <span>View Code</span>
-        </motion.a>
       </div>
 
       {/* Decorative Elements */}

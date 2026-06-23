@@ -251,11 +251,27 @@ function App() {
     },
     {
       img: trip,
-      title: 'Trip planning platform using Figma, MERN stack, & LLM',
+      title: 'Trip planning platform using React, Express, Node.js, MongoDB, Material UI, TailwindCSS, React Icons, LLM & Figma',
+      hot: true,
+    },
+    {
+      img: '/ai-construction.png',
+      title: 'AI-Based Home Construction using React, Node.js, MongoDB & LLM',
+    },
+    {
+      img: '/dsa-learning.png',
+      title: 'DSA Learning Mobile App using React Native, Expo Go, EAS & Material UI',
+      fit: 'contain',
+    },
+    {
+      img: '/job-finder.png',
+      title: 'Job Finder using React, Web Scraping, Node.js & MongoDB',
+      hot: true,
     },
     {
       img: autoexpense_hub,
       title: 'Auto Expense hub platform using React-vite tailwindcss Postman Express and MongoDB',
+      hot: true,
     },
     {
       img: chat,
@@ -418,7 +434,7 @@ function App() {
               {/* Projects Grid */}
               <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {projects.slice(0, visibleProjects).map((project, index) => (
-                  <Project key={index} imglink={project.img} title={project.title} index={index} />
+                  <Project key={index} imglink={project.img} title={project.title} index={index} fit={project.fit} hot={project.hot} />
                 ))}
               </div>
 

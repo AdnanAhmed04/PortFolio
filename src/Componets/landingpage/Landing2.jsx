@@ -64,8 +64,8 @@ const Landing2 = () => {
         <section className="relative min-h-screen flex items-center pt-16 md:pt-20">
             {/* Main Content */}
             <div className="w-full px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-                <div className="max-w-[1400px] mx-auto">
-                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                <div className="max-w-6xl mx-auto">
+                    <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
                         {/* Left Content */}
                         <motion.div
                             initial={{ opacity: 0, x: -40 }}
