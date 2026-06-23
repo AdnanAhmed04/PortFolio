@@ -62,25 +62,11 @@ import FloatingActions from './Componets/FloatingActions/FloatingActions';
 
 
 // importing images
-import form from '../src/Componets/my_projects/form.png';
-import wea from '../src/Componets/my_projects/weather.png';
-import zakat from '../src/Componets/my_projects/zakat.png';
-import expense from '../src/Componets/my_projects/expense.png';
-import finchart from '../src/Componets/my_projects/finchart.png';
-import movie from '../src/Componets/my_projects/movie.png';
 import chat from '../src/Componets/my_projects/chat.png';
 import trip from '../src/Componets/my_projects/trip.png';
 import erp from '../src/Componets/my_projects/erp.png';
 import autoexpense_hub from '../src/Componets/my_projects/autoexpense_hub.png';
-
-
-// finchart
-
 import pak from '../src/Componets/my_projects/pakwheels.png';
-import to_do from '../src/Componets/my_projects/to_do.png';
-import olx from '../src/Componets/my_projects/olx.png';
-import netflix from '../src/Componets/my_projects/netflix.png';
-import shop from '../src/Componets/my_projects/shop.png';
 import linkedin from '../src/Componets/my_projects/linkedin.png';
 
 
@@ -278,51 +264,12 @@ function App() {
       title: 'Chat App using React-vite tailwindcss Express and MongoDB',
     },
     {
-      img: expense,
-      title: 'Expense App using React-vite Tailwindcss Express and MongoDB',
-    }
-    , {
-      img: movie,
-      title: 'Movie Finder using React-vite Tailwindcss and Rest API',
-    }, {
-      img: finchart,
-      title: 'Finchart Pro using Python Tkinter CSV Matplotlib Pandas',
-    }, {
-      img: zakat,
-      title: 'Zakat calculator using Javascript and CSS',
-    },
-    {
-      img: form,
-      title: 'Google Form  using CSS and Firebase',
-    }, {
-      img: to_do,
-      title: 'To Do List App using React-vite and CSS',
-    },
-
-    {
-      img: shop,
-      title: 'Shoping Cart using React and TailwindCSS',
-    },
-    {
-      img: olx,
-      title: 'Olx Clone using React Vite and CSS',
-    },
-    {
       img: pak,
       title: 'PakWheels Clone using React and TailwindCSS',
     },
     {
-      img: wea,
-      title: 'Weather App using Js and TailwindCSS',
-    },
-
-    {
       img: linkedin,
       title: 'linkedin Clone using React and TailwindCSS',
-    },
-    {
-      img: netflix,
-      title: 'HTML CSS and JS',
     },
   ];
   const handleShowMore = () => {
