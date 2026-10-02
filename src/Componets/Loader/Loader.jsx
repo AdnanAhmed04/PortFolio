@@ -35,7 +35,7 @@ const Loader = ({ onLoadingComplete }) => {
                     {/* Background Animation */}
                     <div className="absolute inset-0 overflow-hidden">
                         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
-                        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+                        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }} />
                     </div>
 
                     {/* Loader Content */}
@@ -47,7 +47,7 @@ const Loader = ({ onLoadingComplete }) => {
                             transition={{ duration: 0.6 }}
                             className="mb-8"
                         >
-                            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
                                 Adnan Ahmed
                             </h1>
                             <p className="text-slate-400 text-center mt-2">Full Stack Developer</p>
@@ -58,12 +58,12 @@ const Loader = ({ onLoadingComplete }) => {
                             <motion.div
                                 animate={{ rotate: 360 }}
                                 transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                                className="absolute inset-0 rounded-full border-4 border-transparent border-t-cyan-500 border-r-purple-500"
+                                className="absolute inset-0 rounded-full border-4 border-transparent border-t-sky-500 border-r-blue-600"
                             />
                             <motion.div
                                 animate={{ rotate: -360 }}
                                 transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-                                className="absolute inset-2 rounded-full border-4 border-transparent border-b-blue-500 border-l-pink-500"
+                                className="absolute inset-2 rounded-full border-4 border-transparent border-b-blue-500 border-l-indigo-500"
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <span className="text-white font-bold text-lg">{Math.min(Math.round(progress), 100)}%</span>
@@ -75,7 +75,7 @@ const Loader = ({ onLoadingComplete }) => {
                             <motion.div
                                 initial={{ width: 0 }}
                                 animate={{ width: `${Math.min(progress, 100)}%` }}
-                                className="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-full"
+                                className="h-full bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 rounded-full"
                             />
                         </div>
 
@@ -98,7 +98,7 @@ const Loader = ({ onLoadingComplete }) => {
                     <motion.div
                         animate={{ y: [10, -10, 10], rotate: [360, 180, 0] }}
                         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                        className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-purple-500 rounded-full opacity-50"
+                        className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-blue-500 rounded-full opacity-50"
                     />
                 </motion.div>
             )}

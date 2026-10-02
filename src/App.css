@@ -24,7 +24,8 @@
      100% {inset:0   ;transform: rotate(180deg)}
   }
 .react_icon{
-    width: 200px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .creative_row{
     display: flex;
