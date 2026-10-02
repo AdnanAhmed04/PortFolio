@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaFacebook, FaStackOverflow, FaHeart, FaArrowUp } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFacebook, FaStackOverflow, FaHeart, FaArrowUp, FaMapMarkerAlt, FaEnvelope, FaBriefcase } from 'react-icons/fa';
 import { SiHackerrank, SiUpwork } from 'react-icons/si';
 
 const Footer = () => {
@@ -33,8 +33,8 @@ const Footer = () => {
         <footer className="relative bg-[#060918] border-t border-slate-800/50">
             {/* Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-sky-500/5 rounded-full blur-3xl" />
+                <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
             </div>
 
             <div className="relative max-w-7xl mx-auto px-4 py-12 md:py-16">
@@ -46,7 +46,7 @@ const Footer = () => {
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent mb-4"
+                            className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent mb-4"
                         >
                             Adnan Ahmed
                         </motion.h3>
@@ -64,7 +64,7 @@ const Footer = () => {
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.1, y: -2 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="w-10 h-10 rounded-lg bg-slate-800/50 border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all duration-300"
+                                    className="w-10 h-10 rounded-lg bg-slate-800/50 border border-slate-700/50 flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-500/50 hover:bg-sky-500/10 transition-all duration-300"
                                     aria-label={social.label}
                                 >
                                     <social.icon className="w-4 h-4" />
@@ -81,9 +81,9 @@ const Footer = () => {
                                 <li key={idx}>
                                     <a
                                         href={link.href}
-                                        className="text-slate-400 hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2 group"
+                                        className="text-slate-400 hover:text-sky-400 transition-colors duration-300 flex items-center gap-2 group"
                                     >
-                                        <span className="w-0 h-0.5 bg-cyan-500 group-hover:w-3 transition-all duration-300" />
+                                        <span className="w-0 h-0.5 bg-sky-500 group-hover:w-3 transition-all duration-300" />
                                         {link.name}
                                     </a>
                                 </li>
@@ -95,16 +95,16 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold mb-4 text-lg">Get In Touch</h4>
                         <ul className="space-y-3">
-                            <li className="text-slate-400">
-                                <span className="text-cyan-400">📍</span> Pakistan
+                            <li className="text-slate-400 flex items-center gap-2">
+                                <FaMapMarkerAlt className="text-sky-400 w-4 h-4" /> Pakistan
                             </li>
                             <li>
-                                <a href="mailto:adnanahmedb7208@gmail.com" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                                    <span className="text-cyan-400">✉️</span> adnanahmedb7208@gmail.com
+                                <a href="mailto:adnanahmedb7208@gmail.com" className="text-slate-400 hover:text-sky-400 transition-colors flex items-center gap-2">
+                                    <FaEnvelope className="text-sky-400 w-4 h-4" /> adnanahmedb7208@gmail.com
                                 </a>
                             </li>
-                            <li className="text-slate-400">
-                                <span className="text-cyan-400">💼</span> Available for Freelance
+                            <li className="text-slate-400 flex items-center gap-2">
+                                <FaBriefcase className="text-sky-400 w-4 h-4" /> Available for Freelance
                             </li>
                         </ul>
                     </div>
@@ -127,7 +127,7 @@ const Footer = () => {
                         onClick={scrollToTop}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        className="group flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300"
+                        className="group flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800/50 border border-slate-700/50 text-slate-400 hover:text-sky-400 hover:border-sky-500/50 transition-all duration-300"
                     >
                         <span className="text-sm">Back to Top</span>
                         <FaArrowUp className="w-3 h-3 group-hover:-translate-y-1 transition-transform" />
@@ -136,7 +136,7 @@ const Footer = () => {
             </div>
 
             {/* Gradient Line at Bottom */}
-            <div className="h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500" />
+            <div className="h-1 bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600" />
         </footer>
     );
 };

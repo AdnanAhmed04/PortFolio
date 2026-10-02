@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaFacebook, FaStackOverflow, FaDownload, FaArrowRight } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook, FaStackOverflow, FaDownload, FaArrowRight, FaBriefcase } from "react-icons/fa";
 import { SiHackerrank, SiUpwork } from "react-icons/si";
 
 const Landing2 = () => {
@@ -78,13 +78,10 @@ const Landing2 = () => {
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2 }}
-                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 border border-emerald-500/40 mb-4"
+                                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-sky-500/20 to-blue-500/20 border border-sky-500/40 mb-4"
                             >
-                                <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                                </span>
-                                <span className="text-xs sm:text-sm text-emerald-400 font-medium">Available for Freelance</span>
+                                <FaBriefcase className="w-3 h-3 text-sky-400" />
+                                <span className="text-xs sm:text-sm text-sky-400 font-medium">Available for Freelance</span>
                             </motion.div>
 
                             {/* Main Heading */}
@@ -100,7 +97,7 @@ const Landing2 = () => {
                                     <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
                                         Adnan{" "}
                                     </span>
-                                    <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                                    <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
                                         Ahmed
                                     </span>
                                 </h1>
@@ -116,10 +113,10 @@ const Landing2 = () => {
                                 <div className="flex items-center justify-center lg:justify-start gap-2 flex-wrap">
                                     <span className="text-slate-400 text-base sm:text-lg">I create</span>
                                     <div className="relative">
-                                        <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+                                        <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
                                             {text}
                                         </span>
-                                        <span className="text-yellow-400 animate-pulse ml-0.5">|</span>
+                                        <span className="text-sky-400 animate-pulse ml-0.5">|</span>
                                     </div>
                                 </div>
                             </motion.div>
@@ -132,9 +129,9 @@ const Landing2 = () => {
                                 className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 mb-5"
                             >
                                 Full Stack Developer specializing in building exceptional digital experiences.
-                                I transform ideas into <span className="text-cyan-400 font-medium">modern</span>,
+                                I transform ideas into <span className="text-sky-400 font-medium">modern</span>,
                                 <span className="text-blue-400 font-medium"> scalable</span>, and
-                                <span className="text-purple-400 font-medium"> user-centric</span> web applications.
+                                <span className="text-indigo-400 font-medium"> user-centric</span> web applications.
                             </motion.p>
 
                             {/* Tech Stack Pills */}
@@ -150,7 +147,7 @@ const Landing2 = () => {
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         transition={{ delay: 0.6 + idx * 0.08 }}
-                                        className="px-3 py-1.5 rounded-full text-xs font-medium bg-slate-800/60 text-slate-300 border border-slate-700/50 hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300 cursor-default"
+                                        className="px-3 py-1.5 rounded-full text-xs font-medium bg-slate-800/60 text-slate-300 border border-slate-700/50 hover:border-sky-500/50 hover:text-sky-400 transition-all duration-300 cursor-default"
                                     >
                                         {tech}
                                     </motion.span>
@@ -168,7 +165,7 @@ const Landing2 = () => {
                                     onClick={scrollToContact}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="group px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 text-white font-semibold text-sm flex items-center gap-2 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300"
+                                    className="group px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 text-white font-semibold text-sm flex items-center gap-2 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300"
                                 >
                                     <span>Let's Talk</span>
                                     <FaArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
@@ -177,7 +174,7 @@ const Landing2 = () => {
                                     onClick={handleDownloadCV}
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
-                                    className="px-6 py-3 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm flex items-center gap-2 hover:border-cyan-500/70 hover:bg-cyan-500/10 transition-all duration-300"
+                                    className="px-6 py-3 rounded-xl border-2 border-slate-600 text-white font-semibold text-sm flex items-center gap-2 hover:border-sky-500/70 hover:bg-sky-500/10 transition-all duration-300"
                                 >
                                     <FaDownload className="w-3 h-3" />
                                     <span>Resume</span>
@@ -218,7 +215,7 @@ const Landing2 = () => {
                         >
                             <div className="relative">
                                 {/* Outer Glow */}
-                                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-full blur-2xl opacity-25" />
+                                <div className="absolute -inset-4 bg-gradient-to-r from-sky-500 via-blue-500 to-indigo-500 rounded-full blur-2xl opacity-25" />
 
                                 {/* Image Container */}
                                 <motion.div
@@ -239,7 +236,7 @@ const Landing2 = () => {
                                 <motion.div
                                     animate={{ y: [0, -6, 0], rotate: [0, 3, 0] }}
                                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                    className="absolute -top-2 -right-2 px-3 py-2 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 shadow-lg shadow-cyan-500/30"
+                                    className="absolute -top-2 -right-2 px-3 py-2 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 shadow-lg shadow-blue-500/30"
                                 >
                                     <span className="text-lg">💻</span>
                                 </motion.div>
@@ -251,7 +248,7 @@ const Landing2 = () => {
                                     className="absolute -bottom-1 -left-2 px-3 py-2 rounded-xl bg-slate-800/90 backdrop-blur-sm border border-slate-700/50 shadow-lg"
                                 >
                                     <div className="flex items-center gap-1.5">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                        <div className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse" />
                                         <span className="text-xs font-medium text-slate-300">1+ Years</span>
                                     </div>
                                 </motion.div>
@@ -260,7 +257,7 @@ const Landing2 = () => {
                                 <motion.div
                                     animate={{ x: [0, 4, 0], y: [0, -4, 0] }}
                                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                    className="absolute top-1/2 -right-6 hidden sm:block px-3 py-1.5 rounded-lg bg-purple-500/90 shadow-lg shadow-purple-500/30"
+                                    className="absolute top-1/2 -right-6 hidden sm:block px-3 py-1.5 rounded-lg bg-indigo-500/90 shadow-lg shadow-indigo-500/30"
                                 >
                                     <span className="text-white text-xs font-medium">MERN</span>
                                 </motion.div>
@@ -287,7 +284,7 @@ const Landing2 = () => {
                         <motion.div
                             animate={{ y: [0, 10, 0] }}
                             transition={{ duration: 1.2, repeat: Infinity }}
-                            className="w-1 h-2 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full"
+                            className="w-1 h-2 bg-gradient-to-b from-sky-400 to-blue-500 rounded-full"
                         />
                     </div>
                 </motion.div>

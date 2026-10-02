@@ -57,7 +57,7 @@ function ResponsiveAppBar() {
               whileHover={{ scale: 1.05 }}
               className="flex-shrink-0"
             >
-              <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-lg md:text-xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
                 &lt;Dev /&gt;
               </span>
             </motion.div>
@@ -75,7 +75,7 @@ function ResponsiveAppBar() {
                   className="relative px-4 py-2 text-sm font-medium text-slate-300 hover:text-white cursor-pointer transition-colors group"
                 >
                   {page.name}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 group-hover:w-3/4 transition-all duration-300" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-blue-500 group-hover:w-3/4 transition-all duration-300" />
                 </ScrollLink>
               ))}
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -84,7 +84,7 @@ function ResponsiveAppBar() {
                   smooth={true}
                   offset={-80}
                   duration={500}
-                  className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 text-white text-sm font-medium cursor-pointer hover:shadow-lg hover:shadow-cyan-500/30 transition-all"
+                  className="ml-4 px-5 py-2 rounded-xl bg-gradient-to-r from-sky-500 to-blue-500 text-white text-sm font-medium cursor-pointer hover:shadow-lg hover:shadow-sky-500/30 transition-all"
                 >
                   Hire Me
                 </ScrollLink>
@@ -152,10 +152,10 @@ function ResponsiveAppBar() {
                       offset={-80}
                       duration={500}
                       onClick={closeMenu}
-                      className="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-slate-800/30 border border-slate-700/30 hover:bg-slate-800/60 hover:border-cyan-500/30 transition-all duration-300 cursor-pointer"
+                      className="group flex items-center gap-4 px-6 py-4 rounded-2xl bg-slate-800/30 border border-slate-700/30 hover:bg-slate-800/60 hover:border-sky-500/30 transition-all duration-300 cursor-pointer"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <page.icon className="w-4 h-4 text-cyan-400" />
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500/20 to-blue-500/20 border border-sky-500/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <page.icon className="w-4 h-4 text-sky-400" />
                       </div>
                       <span className="text-lg font-medium text-slate-200 group-hover:text-white transition-colors">
                         {page.name}
@@ -164,7 +164,7 @@ function ResponsiveAppBar() {
                         className="ml-auto"
                         whileHover={{ x: 5 }}
                       >
-                        <svg className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-5 h-5 text-slate-500 group-hover:text-sky-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </motion.div>
@@ -186,7 +186,7 @@ function ResponsiveAppBar() {
                     offset={-80}
                     duration={500}
                     onClick={closeMenu}
-                    className="block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-500 text-white text-lg font-semibold shadow-lg shadow-cyan-500/25 cursor-pointer"
+                    className="block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r from-sky-500 to-blue-500 text-white text-lg font-semibold shadow-lg shadow-sky-500/25 cursor-pointer"
                   >
                     ✨ Let's Work Together
                   </ScrollLink>

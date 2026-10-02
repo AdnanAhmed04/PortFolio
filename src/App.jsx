@@ -59,6 +59,7 @@ import Footer from './Componets/Footer/Footer';
 import Loader from './Componets/Loader/Loader';
 import MouseTracker from './Componets/MouseTracker/MouseTracker';
 import FloatingActions from './Componets/FloatingActions/FloatingActions';
+import Chatbot from './Componets/Chatbot/Chatbot';
 
 
 // importing images
@@ -76,6 +77,7 @@ import linkedin from '../src/Componets/my_projects/linkedin.png';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   const creativeData = [
     {
@@ -291,10 +293,10 @@ function App() {
       <div className='relative bg-[#0a0e2a] min-h-screen overflow-x-hidden'>
         {/* Global Background Effects */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
-          <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }} />
-          <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }} />
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-pink-500/8 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '3s' }} />
+          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
+          <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }} />
+          <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '5s', animationDelay: '2s' }} />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-500/8 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '3s' }} />
         </div>
 
         {/* Content */}
@@ -311,10 +313,10 @@ function App() {
             <div className="relative px-4">
               {/* Section Header */}
               <div className="text-center mb-12 md:mb-16">
-                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-purple-400 text-sm font-medium mb-4">
+                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-sky-500/20 border border-blue-500/30 text-sky-400 text-sm font-medium mb-4">
                   ✨ How I Work
                 </span>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
                   Creative Process
                 </h2>
                 <p className="text-slate-400 mt-4 max-w-2xl mx-auto text-lg">
@@ -322,7 +324,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
                 {creativeData.map((item, index) => (
                   <Creative key={index} heading={item.heading} para={item.para} img={item.img} index={index} />
                 ))}
@@ -336,10 +338,10 @@ function App() {
             <div className="relative max-w-7xl mx-auto px-4">
               {/* Section Header */}
               <div className="text-center mb-12">
-                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-400 text-sm font-medium mb-4">
+                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-sky-500/20 to-blue-500/20 border border-sky-500/30 text-sky-400 text-sm font-medium mb-4">
                   📊 My Achievements
                 </span>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-cyan-200 to-blue-200 bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-sky-200 to-blue-200 bg-clip-text text-transparent">
                   Numbers That Speak
                 </h2>
               </div>
@@ -367,10 +369,10 @@ function App() {
             <div className="relative px-4">
               {/* Section Header */}
               <div className="text-center mb-12 md:mb-16">
-                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 text-cyan-400 text-sm font-medium mb-4">
+                <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-sky-500/20 border border-blue-500/30 text-sky-400 text-sm font-medium mb-4">
                   🚀 My Work
                 </span>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-blue-200 to-sky-200 bg-clip-text text-transparent">
                   Project Showcase
                 </h2>
                 <p className="text-slate-400 mt-4 max-w-2xl mx-auto text-lg">
@@ -389,7 +391,7 @@ function App() {
               <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
                 {visibleProjects < projects.length && (
                   <button
-                    className="group relative px-8 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30"
+                    className="group relative px-8 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/30"
                     onClick={handleShowMore}
                   >
                     <span className="relative z-10 flex items-center gap-2">
@@ -402,7 +404,7 @@ function App() {
                 )}
                 {visibleProjects > 3 && (
                   <button
-                    className="px-8 py-3 rounded-xl border border-slate-600 text-slate-300 font-semibold hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
+                    className="px-8 py-3 rounded-xl border border-slate-600 text-slate-300 font-semibold hover:border-sky-500/50 hover:text-sky-400 transition-all duration-300"
                     onClick={handleShowLess}
                   >
                     <span className="flex items-center gap-2">
@@ -427,7 +429,10 @@ function App() {
           </section>
 
           {/* Floating Action Buttons */}
-          <FloatingActions />
+          <FloatingActions hidden={isChatOpen} />
+
+          {/* CV Chatbot */}
+          <Chatbot onOpenChange={setIsChatOpen} pageReady={!isLoading} />
 
           {/* ------------------------ contact --------------- */}
 

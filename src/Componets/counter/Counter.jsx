@@ -57,7 +57,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '', icon }) => {
       className="group relative flex-1 min-w-[200px] max-w-[300px] p-8 m-4 rounded-2xl bg-gradient-to-br from-slate-900/80 to-slate-800/50 backdrop-blur-xl border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-500 overflow-hidden"
     >
       {/* Background Glow */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-2xl opacity-0 group-hover:opacity-20 blur transition-all duration-500" />
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-sky-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 blur transition-all duration-500" />
 
       {/* Content */}
       <div className="relative z-10 text-center">
@@ -69,7 +69,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '', icon }) => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-3"
         >
-          <span className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
             {count}
           </span>
           <span className="text-3xl md:text-4xl font-bold text-cyan-400">{suffix}</span>
@@ -81,7 +81,7 @@ const Counter = ({ label, targetNumber, duration, suffix = '', icon }) => {
         </p>
 
         {/* Decorative Line */}
-        <div className="mt-4 h-1 w-12 mx-auto rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 group-hover:w-20 transition-all duration-500" />
+        <div className="mt-4 h-1 w-12 mx-auto rounded-full bg-gradient-to-r from-sky-500 to-blue-500 group-hover:w-20 transition-all duration-500" />
       </div>
 
       {/* Corner Decoration */}
